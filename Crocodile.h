@@ -9,7 +9,8 @@
 class Crocodile : public Reptile {
   public:
     /**@brief Konstruktor.
-     * Mengkonstruksi kelas buaya*/
+     * Mengkonstruksi kelas buaya
+     * @param w Nilai untuk berat badan hewan*/
     Crocodile(int w);
     
     /**@brief Destruktor.
