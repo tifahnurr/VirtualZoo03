@@ -3,6 +3,10 @@
 
 #include "pisces.h"
 
+
+/** @class BlueTang
+  * Kelas BlueTang untuk membuat hewan blue tang atau ikan dory
+  */
 class BlueTang : public Pisces {
   public:
     /**@brief Konstruktor.
