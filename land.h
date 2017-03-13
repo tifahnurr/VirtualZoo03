@@ -13,7 +13,7 @@
 
 class Land : public Habitat
 {
-    Land();
+    Land(bool make_cage);
     
     void waterTree();
     

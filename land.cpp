@@ -9,7 +9,7 @@
 #include <iostream>
 #include "land.h"
 
-Land::Land()
+Land::Land(bool make_cage): Habitat(make_cage)
 {
   habitat = 'l';
 }

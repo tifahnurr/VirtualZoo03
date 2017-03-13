@@ -1,14 +1,10 @@
-#ifndef CELL_H
-#define CELL_H
-#include "point.h"
+using namespace std;
 
 class Cell{
 	public:
-		Cell(char Type, Point P): Type(type);
-		~Cell();
+		Cell();
 			
 	protected:
-		char type;
+		char code;
+	
 };
-
-#endif

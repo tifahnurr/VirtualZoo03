@@ -9,7 +9,7 @@
 #include <iostream>
 #include "air.h"
 using namespace std;
-Air::Air()
+Air::Air(bool make_cage) : Habitat(make_cage)
 {
   habitat = 'a';
 }

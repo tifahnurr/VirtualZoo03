@@ -2,14 +2,14 @@
 #include "zoo.h"
 
 // @brief Ctor
-Zoo::Zoo(){
-  map = new Cell*[defaultSize];
-  for(int i = 0; i < defaultSize ; i++){
-        map[i] = new Cell[defaultSize];
+Zoo::Zoo():x(default_size),y(default_size){
+  map = new Cell*[default_size];
+  for(int i = 0; i < default_size ; i++){
+        map[i] = new Cell[default_size];
     }
 }
 // @brief Ctor with paramaters
-Zoo(int p, int l){
+Zoo::Zoo(int p, int l): x(l),y(p){
   map = new Cell*[p];
   for(int i = 0; i < p ; i++){
         map[i] = new Cell[l];
@@ -21,10 +21,6 @@ Zoo::~Zoo(){
     delete [] map[i];
   }
   delete [] map;
-}
-// @brief mengubah cell
-void Zoo::SetCell(Cell c, int x , int y){
-  map[x][y].Get
 }
 // @brief memindahkan hewan
 void Zoo::MoveAnimal(int x, int y , int to){
@@ -59,5 +55,5 @@ void Zoo::MoveAnimal(int x, int y , int to){
 // @brief mengecek apakah bisa memindahkan hewan
 bool Zoo::CanMoveAnimal(int fromx, int fromy, int tox, int toy)
 {
-  return (map[fromx][fromy]== map[tox][toy]) && (map[tox][toy].isCageEmpty);
+  return (map[fromx][fromy].GetHabitat() == map[tox][toy].GetHabitat() ) && (map[tox][toy].IsCageEmpty);
 }

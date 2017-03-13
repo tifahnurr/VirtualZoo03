@@ -15,7 +15,7 @@ class Cage
 public:
     Cage();
     
-    bool isAvailable();
+    bool IsCageEmpty();
     
     Animal& getAnimal();
     

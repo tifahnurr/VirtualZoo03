@@ -14,8 +14,8 @@
 class Air : public Habitat
 {
 	/**@brief Constructor
-	 * Mengalokasi parameter-parameter air*/
-    Air();
+	 * Mengalokasi parameter-parameter Air*/
+    Air(bool make_cage);
    
 	/**@brief PurifyAir
 	 * Membersihkan udara dalam kandang*/

@@ -11,13 +11,21 @@
 
 #include "cell.h"
 #include "cage.h"
-using namespace std;
+
 class Habitat : public Cell
 {
+public:
+    
+    Habitat (bool make_cage);
+    
+    ~Habitat();
     char GetHabitat();
     
+    bool IsCageAvailable();
+    
 protected :
-    Cage cage;
+    Cage *nil_cage = NULL ;
+    Cage *cage;
     char habitat;
 };
 

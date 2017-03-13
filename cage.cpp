@@ -14,18 +14,18 @@ Cage::Cage()
   penghuni = nAnimal;
 }
 
-bool Cage::isAvailable()
+bool Cage::IsCageEmpty()
 {
   return penghuni !=nAnimal;
 }
 
 Animal& Cage::getAnimal()
 {
-  return penghuni;
+  return *penghuni;
 }
 
 void Cage::setAnimal(Animal &x)
 {
-  penghuni = x;
+  penghuni = &x;
   
 }

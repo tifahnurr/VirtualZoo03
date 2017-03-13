@@ -118,6 +118,7 @@ int main(){
       } else if (Peta[i][j] == 'X') {
         
       } else if (Peta[i][j] == 'N') {
+      }
     }
   }
   return 0;

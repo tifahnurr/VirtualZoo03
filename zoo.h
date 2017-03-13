@@ -17,10 +17,6 @@ class Zoo{
      */
     ~Zoo();
     
-    /** @brief mengubah cell
-     */
-    void SetCell(Cell c, int x , int y);
-    
     /** @brief memindahkan hewan
      */
     void MoveAnimal(int x, int y , int to);
@@ -32,7 +28,9 @@ class Zoo{
   
   private:
     Cell **map;
-    const int defaultSize = 30;
+    const int default_size = 30;
+    const int x ;
+    const int y ;
 };
 
 #endif
