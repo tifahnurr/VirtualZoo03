@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-Hippo::Hippo(int w) : weight(w){
+Hippo::Hippo(int w) : Mammal(w){
   diet = new Herbivore(30);
   habitat = new char[2];
   habitat[0]='w';
@@ -29,7 +29,7 @@ Hippo::~Hippo(){
 void Hippo::Interact(){
   std::cout<<"Kuda nil membuka mulutnya"<<std::endl;
   std::cout<<"Giginya tampak"<<std::endl;
-  talk();
+  Talk();
 }
 void Hippo::AnimalDescription(){
   std::cout<<"Hewan yang biasa hidup di daerah Afrika sekitar sungai"<<std::endl;

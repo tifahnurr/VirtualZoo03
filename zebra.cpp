@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Zebra :: Zebra(int w) : weight(w) {
+Zebra :: Zebra(int w) : Mammal(w) {
   diet = new Herbivore(70);
   habitat = new char[2];
   habitat[0] = 'l';
@@ -25,15 +25,7 @@ Zebra :: ~Zebra()
 void Zebra :: Interact()
 {
   cout << "Zebra berlari di padang rumput" << endl;
-  talk();
-}
-    
-void Zebra :: feed()
-{  
-  cout << "Zebra ";
-  DietType.feed;
-  cout << "Zebra memakan rumput hijau segar" << endl;
-  cout << "*nom* *nom*" << endl;
+  Talk();
 }
     
 void Zebra :: AnimalDescription()

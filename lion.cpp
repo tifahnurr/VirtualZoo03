@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-Lion::Lion(int w) : weight(w){
+Lion::Lion(int w) : Mammal(w){
   diet = new Carnivore(35);
   habitat = new char[2];
   habitat[0]='l';
@@ -29,7 +29,7 @@ Lion::~Lion(){
 void Lion::Interact(){
   std::cout<<"Singa mengendap-ngendap di balik semak"<<std::endl;
   std::cout<<"Tampaknya dia ingin menyergap sesuatu"<<std::endl;
-  talk();
+  Talk();
 }
 
 void Lion::AnimalDescription(){

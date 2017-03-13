@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-Dragonfly::Dragonfly(int w) : weight(w){
+Dragonfly::Dragonfly(int w) : Insect(w){
   diet = new Herbivore(10);
   habitat = new char[2];
   habitat[0]='a';

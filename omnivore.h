@@ -4,7 +4,7 @@
 #include "dietType.h"
 
 class Omnivore : public DietType{
-    
+  public:
     /**@brief Constructor.
      * Constructor tanpa parameter*/
     Omnivore();
@@ -16,7 +16,7 @@ class Omnivore : public DietType{
     
     /**@brief feed.
      * Memberi makan hewan berdasarkan jenis makanannya*/
-    void feed();
+    void Feeds(int feed);
     
     
 };

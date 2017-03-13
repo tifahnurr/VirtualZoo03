@@ -12,13 +12,17 @@
 #include "animal.h"
 class Mammal : public Animal{
 public:
+    /**@brief Constructor
+     * alokasi untuk mammal */
+    Mammal(int w);
+    
     /**@brief Interaksi.
      * Berinteraksi dengan hewan mamalia*/
     virtual void Interact()=0;
     
     /**@brief Feed.
      * Memberi makan hewan mamalia*/
-    virtual void feed()=0;
+    virtual void Feed()=0;
     
     /**@brief Description.
      * Menjelaskan secara umum tentang hewan tersebut*/

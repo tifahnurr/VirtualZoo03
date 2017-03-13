@@ -14,16 +14,11 @@ DietType :: DietType(int p)
   portion = p;
 }
 
-DietType :: DietType(const DietType& dt)
-{
-  p = dt.p;
-}
-
-char DietType::getCode(){
+char DietType::GetCode(){
   return code;
 }
 
-int DietType::getPortion(){
+int DietType::GetPortion(){
   return portion;
 }
 

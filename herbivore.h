@@ -12,7 +12,7 @@
 #include "dietType.h"
 
 class Herbivore : public DietType{
-    
+   public:
      /**@brief Constructor.
      * Constructor tanpa parameter*/
     Herbivore();
@@ -24,7 +24,7 @@ class Herbivore : public DietType{
     
     /**@brief feed.
      * Memberi makan hewan berdasarkan jenis makanannya*/
-    void feed();
+    void Feeds(int feed);
     
 };
 

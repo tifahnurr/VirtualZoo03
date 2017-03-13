@@ -3,15 +3,15 @@
 
 #include "pisces.h"
 
-class stingRay : public Pisces {
+class StingRay : public Pisces {
   public:
     /**@brief Konstruktor.
      * Mengkonstruksi kelas pari*/
-    stingRay(int w);
+    StingRay(int w);
     
     /**@brief Destruktor.
      * Mengdealokasi parameter pada kelas pari*/
-    ~stingRay();
+    ~StingRay();
     
     /**@brief Interaksi.
      * Berinteraksi dengan hewan pari*/

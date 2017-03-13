@@ -4,18 +4,19 @@
 #include <string>
 #include <iostream>
 #include "Renderable.h"
-
-
+#include "omnivore.h"
+#include "herbivore.h"
+#include "carnivore.h"
 
 class Animal : public Renderable{
   public:
     /**@brief Constructor.
      * Mengalokasikan parameter class Animal*/
-    Animal();
+    Animal(int p);
     
     /**@brief Destructor.
      * Mendealokasi parameter dari class Animal*/
-    ~Animal();
+    virtual ~Animal();
     
     /**@brief Interact.
      * Melakukan interaksi dengan hewan*/
@@ -27,8 +28,8 @@ class Animal : public Renderable{
              
     /**@brief GetDiet.
      * Mengembalikan jenis pemakan apakah hewan tersebut*/
-    diet_type GetDiet();
-                
+    DietType GetDiet();
+    
     /**@brief GetHabitat.
      * Mengembalikan jenis habitat dari hewan*/
     char* GetHabitat();

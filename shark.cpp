@@ -4,7 +4,7 @@
 
 using namespace std;
 
-shark :: shark(int w) : weight(w)
+Shark :: Shark(int w) : Pisces(w)
 {
   diet = new Carnivore(80);
   habitat = new char[2];
@@ -18,27 +18,19 @@ shark :: shark(int w) : weight(w)
   number_animal++;
 }
     
-shark :: ~shark()
+Shark :: ~Shark()
 {
   delete diet;
   delete habitat;
 }
     
-void shark :: Interact()
+void Shark :: Interact()
 {
   cout << "Hiu bergerak menyusuri aquarium yang ada." << endl;
-  talk();
+  Talk();
 }
-    
-void shark :: feed()
-{
-  cout << "Hiu ";
-  DietType.feed;
-  cout << "Hiu sudah bersiap di bagian atas aquarium. " << endl;
-  cout << "ia menunggu penjaga memberikannya makanan berupa ikan segar" << endl;
-}
-    
-void shark :: AnimalDescription()
+
+void Shark :: AnimalDescription()
 {
   cout << "Hiu merupakan salah satu hewan ganas yang terdapat di air." << endl;
   cout << "Hiu mempunyai tubuh yang dilapisi kulit dermal denticle yang melindungi mereka dari kerusakan dari parasit." << endl;

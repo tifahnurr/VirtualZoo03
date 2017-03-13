@@ -23,8 +23,8 @@ public:
     
     
 private:
-    Animal nAnimal = Nil;
-    Animal penghuni;
+    Animal *nAnimal = NULL;
+    Animal *penghuni;
     
 };
 

@@ -20,7 +20,7 @@ Omnivore::Omnivore(int p):DietType(p)
   code = 'o';
 }
 
-void Omnivore::feed()
+void Omnivore::Feeds(int feed)
 {
-  cout << "diberikan campuran daging dan tanaman seberat " << portion << " gr" << endl;
+  cout << "diberikan campuran daging dan tanaman seberat " << feed << " gr" << endl;
 }

@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-clownFish::clownFish(int w) : weight(w){
+clownFish::clownFish(int w) : Pisces(w){
   diet = new Herbivore(3);
   habitat = new char[2];
   habitat[0]='w';
@@ -29,7 +29,7 @@ clownFish::~clownFish(){
 void clownFish::Interact(){
   std::cout<<"Ikan badut berenang-renang bebas di dalam akuarium"<<std::endl;
   std::cout<<"Merlin? Nemo?"<<std::endl;
-  talk();
+  Talk();
 }
 
 void clownFish::AnimalDescription(){

@@ -1,7 +1,7 @@
 #include "animal.h"
 #include <string.h>
 
-Animal::Animal() : weight(0){
+Animal::Animal(int w) : weight(w){
   habitat = new char[2];
   tame = true;
   is_animal=false;
@@ -17,7 +17,7 @@ std::string Animal::GetName(){
 }  
 
 DietType Animal::GetDiet(){
-  return diet;
+  return *diet;
 }
 
 char* Animal::GetHabitat(){
@@ -26,7 +26,7 @@ char* Animal::GetHabitat(){
 
 void Animal::Feed(){
   std::cout<<name;
-  diet.Feed();
+  diet->Feeds();
   std::cout<<std::endl;
   std::cout<<name<<" menikmati makanannya dengan lahap"<<std::endl;
 }  
@@ -44,5 +44,5 @@ char Animal::Render(){
 }
 
 int Animal::CalculateFood(){
-  return (weight*diet.GetPortion());
+  return (weight*diet->GetPortion());
 }

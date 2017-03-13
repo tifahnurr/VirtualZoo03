@@ -11,7 +11,7 @@ Carnivore::Carnivore(int p):DietType(p)
   code = 'c';
 }
 
-void Carnivore::feed()
+void Carnivore::Feeds(int feed)
 {
-  cout << "diberikan daging seberat " << portion << " gr" << endl;
+  cout << "diberikan daging seberat " << feed << " gr" << endl;
 }

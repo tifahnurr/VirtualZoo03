@@ -4,7 +4,7 @@
 
 using namespace std;
 
-snake :: snake(int w) : weight(w){
+Snake :: Snake(int w) : Reptile(w){
   diet = new Carnivore(100);
   habitat = new char[2];
   habitat[0] = 'l';
@@ -16,28 +16,20 @@ snake :: snake(int w) : weight(w){
   number_animal++;
 }
     
-snake :: ~snake()
+Snake :: ~Snake()
 {
   delete diet;
   delete habitat;
 }
     
-void snake :: Interact()
+void Snake :: Interact()
 {
   cout << "Ular melingkar di pohon sambil beristirahat." << endl;
   cout << "Terkadang, ia berdesis sambil menjulurkan lidahnya" << endl;
-  talk();
+  Talk();
 }
     
-void snake :: feed()
-{
-  cout << "Ular ";
-  DietType.feed;
-  cout << "Ular memakan mangsa yang telah disediakan." << endl;
-  cout << "Tikus yang malang itu, kini sudah menjadi santapan ular." << endl;
-}
-    
-void snake :: AnimalDescription()
+void Snake :: AnimalDescription()
 {
   cout << "Ular adalah reptilia tak berkaki dan bertubuh panjang." << endl;
   cout << "Ular memiliki sisik seperti kadal dan digolongkan ke dalam reptil bersisik." << endl;

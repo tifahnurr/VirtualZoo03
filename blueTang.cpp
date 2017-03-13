@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-BlueTang::BlueTang(int w) : weight(w){
+BlueTang::BlueTang(int w) : Pisces(w){
   diet = new Herbivore(5);
   habitat = new char[2];
   habitat[0]='w';
@@ -29,7 +29,7 @@ BlueTang::~BlueTang(){
 void BlueTang::Interact(){
   std::cout<<"Ikan blue tang berenang-renang dalam air"<<std::endl;
   std::cout<<"Hai Dory!"<<std::endl;
-  talk();
+  Talk();
 }
 
 void BlueTang::AnimalDescription(){

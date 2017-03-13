@@ -4,7 +4,7 @@
 
 using namespace std;
 
-stingRay :: stingRay(int w) : weight(w){
+StingRay :: StingRay(int w) : Pisces(w){
   diet = new Herbivore(70);
   habitat = new char[2];
   habitat[0] = 'w';
@@ -16,28 +16,20 @@ stingRay :: stingRay(int w) : weight(w){
   number_animal++;
 }
     
-stingRay :: ~stingRay()
+StingRay :: ~StingRay()
 {
   delete diet;
   delete habitat;
 }
     
-void stingRay :: Interact()
+void StingRay :: Interact()
 {
   cout << "Ikan pari berenang mengitari aquarium yang terbatas luasnya." << endl;
   cout << "Ikan pari mengepakkan 'sayap'nya dalam berenang." << endl;
-  talk();
+  Talk();
 }
-    
-void stingRay :: feed()
-{
-  cout << "Ikan pari ";
-  DietType.feed;
-  cout << "Ikan pari memakan plankton yang tersebar di dalam aquarium." << endl;
-  cout << "Ikan pari makan plankton dengan cara membuka mulutnya sambil berenang, sehingga plankton masuk ke dalam mulutnya." << endl;
-}
-    
-void stingRay :: AnimalDescription()
+
+void StingRay :: AnimalDescription()
 {
   cout << "Ikan pari memiliki sirip yang panjangnya cukup panjang, sehingga bisa membantu dalam berenang." << endl;
   cout << "Ikan pari dapat ditemuka di lautan tropis di seluruh dunia. Persebaran yang luas dan penampilannya yang unik" << endl;

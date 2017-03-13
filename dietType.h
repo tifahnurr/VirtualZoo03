@@ -1,3 +1,6 @@
+#ifndef DIET_H
+#define DIET_H
+
 /** @class DietType
   * kelas untuk menyimpan banyaknya porsi makanan yang dibutuhkan
   */
@@ -9,27 +12,29 @@ class DietType{
     DietType();
     /** @brief Constructor with parameter.
       * Menciptakan DietType dengan portion sebnyak p
-      * @param banyaknya porsi makanan yang dibutuhkan per hewan
+      * @param p banyaknya porsi makanan yang dibutuhkan per hewan
       */
     DietType(int p);
-    /** @brief Copy Constructor.
-      */
-    DietType(const DietType&);
-    virtual void feed ()=0;
+        
+    /** @brief Feed.
+      * Memberi makan hewan berdasarkan makanannya */
+    virtual void Feeds (int feed)=0;
     
     /** @brief getCode.
       * Mengembalikan satu char yang merupakan kode pembeda
       */
-    char getCode();
+    char GetCode();
     
     /** @brief getPortion.
       * Mengembalikan porsi hewan relatif terhadap berat badan
       */
-    int getPortion();
+    int GetPortion();
       
   
   protected:
-    int umum=400;
+    int umum=60;
     int portion;
     char code;
 };
+
+#endif

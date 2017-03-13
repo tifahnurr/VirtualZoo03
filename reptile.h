@@ -5,6 +5,10 @@
 
 class Reptile : public Animal{
 	public:
+    /**@brief Constructor
+     * alokasi untuk reptile */
+    Reptile(int w);
+    
 		/**@brief Interaksi.
 		 * Berinteraksi dengan hewan reptile*/
 		virtual void Interact()=0;

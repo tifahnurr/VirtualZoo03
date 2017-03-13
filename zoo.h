@@ -1,6 +1,8 @@
 #ifndef ZOO_H
 #define ZOO_H
 
+#include "cell.h"
+
 class Zoo{
   public:
     /** @brief Ctor

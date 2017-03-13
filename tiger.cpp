@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Tiger :: Tiger(int w) : weight(w){
+Tiger :: Tiger(int w) : Mammal(w){
   diet = new Carnivore(90);
   habitat = new char[2];
   habitat[0] = 'l';
@@ -26,15 +26,7 @@ void Tiger :: Interact()
 {
   cout << "Harimau sedang bermain dengan teman se spesiesnya." << endl;
   cout << "Mereka bermain kejar kejaran hingga terguling guling." << endl;
-  talk();
-}
-    
-void Tiger :: feed()
-{
-  cout << "Harimau ";
-  DietType.feed;
-  cout << "Harimau memakan daging merah segar yang disediakan petugas kebung binatang." << endl;
-  cout << "Tanpa menunggu, harimau langsung melahap daging yang dihidangkan." << endl;
+  Talk();
 }
     
 void Tiger :: AnimalDescription()

@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-Draco::Draco(int w) : weight(w){
+Draco::Draco(int w) : Reptile(w){
   diet = new Carnivore(20);
   habitat = new char[2];
   habitat[0]='a';
@@ -29,7 +29,7 @@ Draco::~Draco(){
 void Draco::Interact(){
   std::cout<<"Bunglon terbang membuka selaput kulitnya"<<std::endl;
   std::cout<<"Dia berpindah dengan cara terbang"<<std::endl;
-  talk();
+  Talk();
 }
 
 void Draco::AnimalDescription(){

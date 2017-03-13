@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-Giraffe::Giraffe(int w) : weight(w){
+Giraffe::Giraffe(int w) : Mammal(w){
   diet = new Herbivore(50);
   habitat = new char[2];
   habitat[0]='l';
@@ -29,7 +29,7 @@ Giraffe::~Giraffe(){
 void Giraffe::Interact(){
   std::cout<<"Jerapah menengok dengan lehernya yang panjang"<<std::endl;
   std::cout<<"Telinganya bergerak-gerak"<<std::endl;
-  talk();
+  Talk();
 }
 
 void Giraffe::AnimalDescription(){

@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-Cendrawasih::Cendrawasih(int w) : weight(w){
+Cendrawasih::Cendrawasih(int w) : Aves(w){
   diet = new Herbivore(20);
   habitat = new char[2];
   habitat[0]='a';
@@ -29,7 +29,7 @@ Cendrawasih::~Cendrawasih(){
 void Cendrawasih::Interact(){
   std::cout<<"Cendrawasih mengepakkan sayapnya"<<std::endl;
   std::cout<<"Burung surga terbang lagi"<<std::endl;
-  talk();
+  Talk();
 }
 
 void Cendrawasih::AnimalDescription(){

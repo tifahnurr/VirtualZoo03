@@ -9,6 +9,8 @@
 #include "mammal.h"
 
 using namespace std;
+
+Mammal::Mammal(int w) : Animal(w){}
 void Mammal:: Description()
 {
   cout << "Hewan tersebut termasuk pada hewan mamalia. Pembagian tersebut berdasarkan hewan yang memiliki kelenjar susu." << endl;

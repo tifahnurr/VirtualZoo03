@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-Crocodile::Crocodile(int w) : weight(w){
+Crocodile::Crocodile(int w) : Reptile(w){
   diet = new Carnivore(100);
   habitat = new char[2];
   habitat[0]='l';
@@ -29,7 +29,7 @@ Crocodile::~Crocodile(){
 void Crocodile::Interact(){
   std::cout<<"Buaya membuka mulutnya menunggu mangsa"<<std::endl;
   std::cout<<"Buaya itu bergerak di dalam kandangnya"<<std::endl;
-  talk();
+  Talk();
 }
 
 void Crocodile::AnimalDescription(){

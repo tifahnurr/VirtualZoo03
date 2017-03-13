@@ -4,7 +4,7 @@
 
 using namespace std;
 
-pigeon :: pigeon(int w) : weight(w)
+Pigeon :: Pigeon(int w) : Aves(w)
 {
   diet = new Herbivore(40);
   habitat = new char[2];
@@ -18,27 +18,20 @@ pigeon :: pigeon(int w) : weight(w)
   number_animal++;
 }
     
-pigeon :: ~pigeon()
+Pigeon :: ~Pigeon()
 {
   delete diet;
   delete habitat;
 }
     
-void pigeon :: Interact()
+void Pigeon :: Interact()
 {
   cout << "Burung dara cukup sulit untuk di pegang, ia akan terbang ketika kita mendekat." << endl;
   cout << "Namun burung dara akan mendekat ketika ada makanan di dekatnya." << endl;
-  talk();
+  Talk();
 }
-    
-void pigeon :: feed()
-{
-  cout << "Burung merpati terbang mendekat lalu berkumpul ketika makanan datang dan siap di tabur." << endl;
-  cout << "Ketika biji bijian yang merupakan makanan dari burung merpati di tabur, burung burung ini" << endl;
-  cout << "sontak berkumpul dan memakan biji biji yang sudah di taburkan." << endl;
-}
-    
-void pigeon :: AnimalDescription()
+
+void Pigeon :: AnimalDescription()
 {
   cout << "Burung merpati terdapat di seluruh duniam namun varietas terbesar terdapat di indomaata." << endl;
   cout << "Burung merpati membangun sangkarnya dari ranting dan sisa-sisa lainnya." << endl;

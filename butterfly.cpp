@@ -8,7 +8,7 @@
     bool is_animal;*/
 
 
-Butterfly::Butterfly(int w) : weight(w){
+Butterfly::Butterfly(int w) : Insect(w){
   diet = new Herbivore(5);
   habitat = new char[2];
   habitat[0]='a';
@@ -29,7 +29,7 @@ Butterfly::~Butterfly(){
 void Butterfly::Interact(){
   std::cout<<"Kupu-kupu hinggap di suatu bunga"<<std::endl;
   std::cout<<"Kupu-kupu itu terbang lagi"<<std::endl;
-  talk();
+  Talk();
 }
 
 void Butterfly::AnimalDescription(){

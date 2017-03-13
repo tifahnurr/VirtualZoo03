@@ -9,8 +9,8 @@
 #include <iostream>
 #include "pisces.h"
 using namespace std;
-/**@brief Description.
- * Menjelaskan secara umum tentang hewan tersebut*/
+Pisces::Pisces(int w) : Animal(w) {}
+
 void Pisces::Description()
 {
   cout << "A fish is any member of a group of animals that consist of all gill-bearing aquatic craniate animals that lack limbs with digits." << endl;

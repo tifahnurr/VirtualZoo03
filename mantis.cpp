@@ -4,7 +4,7 @@
 
 using namespace std;
 
-mantis :: mantis(int w) : weight(w){
+Mantis :: Mantis(int w) : Insect(w){
   diet = new Herbivore(10);
   habitat = new char[2];
   habitat[0] = 'l';
@@ -17,18 +17,18 @@ mantis :: mantis(int w) : weight(w){
   number_animal++;
 }
     
-mantis :: ~mantis(){
+Mantis :: ~Mantis(){
   delete diet;
   delete habitat;
 }
     
-void mantis :: Interact(){
+void Mantis :: Interact(){
   cout << "Belalang hampir selalu tidak terlihat di habitat aslinya." << endl;
   cout << "Mereka berkamuflase dengan bersembunyi menyerupai daun." << endl;
-  talk();
+  Talk();
 }
     
-void mantis :: AnimalDescription(){
+void Mantis :: AnimalDescription(){
   cout << "Belalang sembah adalah serangga yang termasuk ke dalam ordo mantodea." << endl;
   cout << "Mereka disebut praying mantis karena sikapnya yang seringkali kelihatan seperti sedang berdoa. " << endl;
 }

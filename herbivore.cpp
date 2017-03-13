@@ -20,7 +20,7 @@ Herbivore::Herbivore(int p):DietType(p)
   code = 'h';
 }
 
-void Herbivore::feed()
+void Herbivore::Feeds(int feed)
 {
-    cout << "diberikan tanaman seberat " << portion << " gr" << endl;
+    cout << "diberikan tanaman seberat " << feed << " gr" << endl;
 }

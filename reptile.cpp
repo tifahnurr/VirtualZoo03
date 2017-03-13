@@ -2,7 +2,10 @@
 #include "reptile.h"
 
 using namespace std;
-void Repitle:: Description()
+
+Reptile::Reptile(int w) : Animal(w){}
+
+void Reptile:: Description()
 {
   cout << "Hewan reptile ini memiliki darah dingin." << endl;
     

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-penguin :: penguin(int w) : weight(w)
+Penguin :: Penguin(int w) : Aves(w)
 {
   diet = new Carnivore(30);
   habitat = new char[2];
@@ -18,28 +18,20 @@ penguin :: penguin(int w) : weight(w)
   number_animal++;
 }
     
-penguin :: ~penguin()
+Penguin :: ~Penguin()
 {
   delete diet;
   delete habitat;
 }
     
-void penguin :: Interact()
+void Penguin:: Interact()
 {
   cout << "Penguin bermain main dengan 'arena' yang telah dibuat di kandangnya" << endl;
   cout << "Mereka berseluncur di 'arena' mereka dengan menggunakan perut mereka" << endl;
-  talk();
+  Talk();
 }
-    
-void penguin :: feed()
-{
-  cout << "Penguin ";
-  DietType.feed;
-  cout << "Ketika penjaga keluar membawa seember ikan segar, penguin langsung bergerak mengerumuni penjaga." << endl;
-  cout << "Penjaga melemparkan ikan, dan satu per satu ikan tadi dilahap habis oleh penguin." << endl;
-}
-    
-void penguin :: AnimalDescription()
+
+void Penguin :: AnimalDescription()
 {
   cout << "Penguin adalah hewan akuatik jenis burung yang tidak bisa terbang dan secara umum hidup di belahan bumi selatan." << endl;
   cout << "Penguin terlihat tidak takut dengan manusia, bahkan mendekati peneliti yang sedang mempelajari mereka. " << endl;

@@ -1,7 +1,7 @@
 #include "bat.h"
 
 
-Bat::Bat(int w) : weight(w){
+Bat::Bat(int w) : Mammal(w){
   diet = new Omnivore(30);
   habitat = new char[2];
   habitat[0]='a';
@@ -22,7 +22,7 @@ Bat::~Bat(){
 void Bat::Interact(){
   std::cout<<"Kelelawar mengepakkan sayapnya sekali"<<std::endl;
   std::cout<<"Tampaknya sedang tidur"<<std::endl;
-  talk();
+  Talk();
 }
 
 void Bat::AnimalDescription(){
