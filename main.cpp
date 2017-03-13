@@ -4,7 +4,6 @@
 #include <fstream>
 #include <curses.h>
 #include "stdlib.h"
-#include "zoo.h"
 
 using namespace std;
 
@@ -75,8 +74,8 @@ void LoadingScreen(){
 int main(){
 
   int i, j;
-  static const int panjang = 14;
-  static const int lebar = 8;
+  static const int panjang = 25;
+  static const int lebar = 50;
   char Peta [panjang][lebar];
   
   // Peta = new Zoo(panjang,lebar);
@@ -104,22 +103,33 @@ int main(){
   file.close();
   // PENCIPTAAN OBJEK
   for (i = 0; i < panjang; i++){
-    for (j = 0; j < lebar){
-      if (Peta[i][j] == 'W'){
+    for (j = 0; j < lebar; j++){
+      if (Peta[i][j] == '-'){
         
-      } else if (Peta[i][j] == 'L') {
+      } else if (Peta[i][j] == 'W') {
         
       } else if (Peta[i][j] == 'F') {
         
+      } else if (Peta[i][j] == 'L') {
+      
+      } else if (Peta[i][j] == 'w') {
+        
+      } else if (Peta[i][j] == 'f') {
+        
+      } else if (Peta[i][j] == 'l') {
+	  
+	  } else if (Peta[i][j] == 'P') {
+      
       } else if (Peta[i][j] == 'R') {
       
-      } else if (Peta[i][j] == '-') {
-        
-      } else if (Peta[i][j] == 'X') {
-        
-      } else if (Peta[i][j] == 'N') {
       }
     }
+  }
+  for (i = 0; i < panjang; i++){
+    for (j = 0; j < lebar; j++){
+      cout << Peta[i][j];
+    }
+    cout << endl;
   }
   return 0;
 }
