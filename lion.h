@@ -3,7 +3,9 @@
 
 #include "mammal.h"
 
-
+/** @class Lion
+  * Kelas Lion untuk membuat hewan singa
+  */
 class Lion : public Mammal {
   public:
     /**@brief Konstruktor.
