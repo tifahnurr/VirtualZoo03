@@ -3,6 +3,9 @@
 
 #include "reptile.h"
 
+/** @class Komodo
+  * Kelas Komodo untuk membuat hewan komodo
+  */
 class Komodo : public Reptile {
   public:
     /**@brief Konstruktor.
