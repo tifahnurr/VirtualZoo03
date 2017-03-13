@@ -8,7 +8,7 @@ class Facility: public Cell{
 		/**@brief Constructor.
 		  *Mengkonstruksi kelas Facility */
 		Facility();
-		/**@brief Dtor.
+		/**@brief Destructor.
 		  *Mengdealokasi parameter dari kelas facility */
 		~Facility();
 		
