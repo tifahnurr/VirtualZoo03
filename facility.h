@@ -9,7 +9,7 @@ class Facility: public Cell{
 		  *Mengkonstruksi kelas Facility */
 		Facility();
 		/**@brief Dtor.
-		  *Menghapus nilai dari kelas facility */
+		  *Mengdealokasi parameter dari kelas facility */
 		~Facility();
 		
 	protected:
