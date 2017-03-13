@@ -1,14 +1,10 @@
 #ifndef ZOO_H
 #define ZOO_H
-
 #include "cell.h"
+#include "cage.h"
 
 class Zoo{
   public:
-    /** @brief Ctor
-     */
-    Zoo();
-    
     /** @brief Ctor with parameters
      */
     Zoo(int p, int l);
@@ -17,6 +13,10 @@ class Zoo{
      */
     ~Zoo();
     
+    /** @brief mengubah cell
+     */
+    void SetCell(char c, int x , int y);
+    
     /** @brief memindahkan hewan
      */
     void MoveAnimal(int x, int y , int to);
@@ -24,13 +24,12 @@ class Zoo{
     /**@brief mengecek apakah bisa memindahkan hewan
      */
     bool CanMoveAnimal(int fromx, int fromy, int tox, int toy);
-  
+    /**@brief load file eksternal map
+     */
+    void LoadMap(char * map_name);
   
   private:
     Cell **map;
-    const int default_size = 30;
-    const int x ;
-    const int y ;
 };
 
 #endif
