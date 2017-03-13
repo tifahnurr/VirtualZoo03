@@ -3,6 +3,10 @@
 
 #include "insect.h"
 
+/** @class Roach.
+  * Kelas Roach untuk membuat hewan kecoak
+  */
+
 class Roach : public Insect {
   public:
     /**@brief Konstruktor.
