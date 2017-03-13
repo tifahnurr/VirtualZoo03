@@ -3,6 +3,10 @@
 
 #include "pisces.h"
 
+/** @class StingRay.
+  * Kelas StingRay untuk membuat hewan ikan pari
+  */
+
 class StingRay : public Pisces {
   public:
     /**@brief Konstruktor.
