@@ -1,0 +1,25 @@
+#ifndef BUTTERFLY_H
+#define BUTTERFLY_H
+
+#include "insect.h"
+
+class Butterfly : public Insect {
+  public:
+    /**@brief Konstruktor.
+     * Mengkonstruksi kelas kupu-kupu*/
+    Butterfly(int w);
+    
+    /**@brief Destruktor.
+     * Mengdealokasi parameter pada kelas kupu-kupu*/
+    ~Butterfly();
+    
+    /**@brief Interaksi.
+     * Berinteraksi dengan hewan kupu-kupu*/
+    void Interact();
+    
+    /**@brief AnimalDescription.
+     * Menjelaskan secara khusus mengenai hewan*/
+    void AnimalDescription();
+};
+
+#endif

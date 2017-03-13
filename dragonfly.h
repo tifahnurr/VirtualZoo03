@@ -1,0 +1,25 @@
+#ifndef DRAGONF_H
+#define DRAGONF_H
+
+#include "insect.h"
+
+class Dragonfly : public Insect {
+  public:
+    /**@brief Konstruktor.
+     * Mengkonstruksi kelas capung*/
+    Dragonfly(int w);
+    
+    /**@brief Destruktor.
+     * Mengdealokasi parameter pada kelas capung*/
+    ~Dragonfly();
+    
+    /**@brief Interaksi.
+     * Berinteraksi dengan hewan capung*/
+    void Interact();
+    
+    /**@brief AnimalDescription.
+     * Menjelaskan secara khusus mengenai hewan*/
+    void AnimalDescription();
+};
+
+#endif
