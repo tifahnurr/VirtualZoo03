@@ -3,6 +3,10 @@
 
 #include "mammal.h"
 
+/** @class Zebra.
+  * Kelas Zebra untuk membuat hewan zebra
+  */
+
 class Zebra : public Mammal {
   public:
     /**@brief Konstruktor.
