@@ -3,6 +3,10 @@
 
 #include "mammal.h"
 
+/** @class Giraffe
+  * Kelas Giraffe untuk membuat hewan buaya
+  */
+
 class Giraffe : public Mammal {
   public:
     /**@brief Konstruktor.
