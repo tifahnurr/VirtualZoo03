@@ -1,5 +1,7 @@
-using namespace std;
+#ifndef CELL_H
+#define CELL_H
 
+using namespace std;
 
 /** @class Cell
   * Kelas Cell untuk membuat cell
@@ -14,3 +16,5 @@ class Cell{
 		char code;
 	
 };
+
+#endif
