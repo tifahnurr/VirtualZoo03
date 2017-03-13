@@ -11,8 +11,10 @@
 class Animal : public Renderable{
   public:
     /**@brief Constructor.
-     * Mengalokasikan parameter class Animal*/
-    Animal(int p);
+     * Mengalokasikan parameter class Animal
+     * @param w Nilai berat badan dari suatu Animal
+     */
+    Animal(int w);
     
     /**@brief Destructor.
      * Mendealokasi parameter dari class Animal*/
