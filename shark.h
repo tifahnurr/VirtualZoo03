@@ -3,6 +3,10 @@
 
 #include "pisces.h"
 
+/** @class Shark
+  * Kelas Shark untuk membuat hewan hiu
+  */
+
 class Shark : public Pisces {
   public:
     /**@brief Konstruktor.
