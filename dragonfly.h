@@ -3,6 +3,9 @@
 
 #include "insect.h"
 
+/** @class Dragonfly
+  * Kelas Dragonfly untuk membuat hewan capung
+  */
 class Dragonfly : public Insect {
   public:
     /**@brief Konstruktor.
