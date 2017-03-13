@@ -3,6 +3,10 @@
 
 #include "mammal.h"
 
+
+/** @class Bat
+  * Kelas Bat untuk membuat hewan kelelawar
+  */
 class Bat : public Mammal {
   public:
     /**@brief Konstruktor.
