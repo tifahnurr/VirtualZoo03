@@ -3,6 +3,10 @@
 
 #include "aves.h"
 
+/** @class Swan
+  * Kelas Swan untuk membuat hewan burung angsa
+  */
+
 class Swan : public Aves {
   public:
     /**@brief Konstruktor.
