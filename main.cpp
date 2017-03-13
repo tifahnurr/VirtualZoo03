@@ -77,38 +77,19 @@ int main(){
   int i, j;
   static const int panjang = 25;
   static const int lebar = 50;
-  char Peta [panjang][lebar];
-  
-  // Peta = new Zoo(panjang,lebar);
+  Peta = new Zoo(panjang,lebar);
   
   LoadingScreen();
+  // Membuka file eksternal map dan memindahkan ke matriks Zoo
+  LoadMap("map.txt");
   
-  // INISIALISASI ZOO
-  for (i = 0; i < panjang; i++)
-    for (j = 0; j < lebar; j++)
-      Peta[i][j] = '0';
-      
-  // MENYALIN FILE EKS KE ZOO
-  ifstream file ("map.txt");
-  string line;
-  if(file.is_open()){
-    for(i = 0; i < panjang; i++){
-        string row;
-        if (file >> row){
-          for (j = 0; j != min<int>(lebar,row.length()); ++j){
-            Peta[i][j] = row[j];
-        }
-      } else break;
-    }
-  }
-  file.close();
-  // PENCIPTAAN OBJEK
+  // Penciptaan objek pada Zoo
   for (i = 0; i < panjang; i++){
     for (j = 0; j < lebar; j++){
       SetCell(Peta[i][j],i,j);
     }
   }
-  // TEST CETAK MATRIKS
+  
   /*
   for (i = 0; i < panjang; i++){
     for (j = 0; j < lebar; j++){
