@@ -3,6 +3,10 @@
 
 #include "pisces.h"
 
+
+/** @class clownFish
+  * Kelas clownFish untuk membuat hewan ikan badut
+  */
 class clownFish : public Pisces {
   public:
     /**@brief Konstruktor.
