@@ -17,7 +17,8 @@ class DietType{
     DietType(int p);
         
     /** @brief Feed.
-      * Memberi makan hewan berdasarkan makanannya */
+      * Memberi makan hewan berdasarkan makanannya 
+      * @param feed Nilai beratnya makanan yang diberikan kepada hewan*/
     virtual void Feeds (int feed)=0;
     
     /** @brief getCode.
