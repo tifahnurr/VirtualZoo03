@@ -3,21 +3,34 @@
 #include "cell.h"
 #include "cage.h"
 
+/** @class Zoo
+  * Kelas Zoo untuk membuat Zoo dengan ukura tertentu
+  */
 class Zoo{
   public:
-    /** @brief Ctor with parameters
-     */
+    /**@brief Ctor with parameters
+     * Mengkonstruksi kelas Zoo
+     * @param p Nilai panjang dari luas virtual zoo
+     * @param l NIlai lebar dari luas virtual zoo*/
     Zoo(int p, int l);
     
     /** @brief Dtor
+      * Mengdealokasi parameter dari kelas zoo
      */
     ~Zoo();
     
-    /** @brief mengubah cell
+    /**@brief mengubah cell
+     * Mendefinisikan tipe dari cell
+     * @param c Tipe dari cell
+     * @param x Lokasi x dari cell yang akan di definisikan
+     * @param y Lokasi y dari cell yang akan di definisikan
      */
     void SetCell(char c, int x , int y);
     
-    /** @brief memindahkan hewan
+    /** @brief MoveAnimal
+      * Memindahkan animal
+      * @param x Lokasi x dari animal yang akan dipindahkan
+      * @param y Lokasi y dari animal yang akan dipindahkan
      */
     void MoveAnimal(int x, int y , int to);
     
