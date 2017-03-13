@@ -3,6 +3,10 @@
 
 #include "animal.h"
 
+/** @class Aves
+  * Kelas Aves untuk membuat hewan jenis aves
+  */
+
 class Aves : public Animal{
 	public:
         /**@brief Constructor
