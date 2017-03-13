@@ -6,7 +6,8 @@ class Pisces : public Animal{
 	public:
     
     /**@brief Constructor
-     * alokasi untuk pisces */
+     * alokasi untuk pisces 
+     * @param Nilai dari berat badan hewan pisces*/
     Pisces(int w);
     
 		/**@brief Interaksi.
