@@ -3,6 +3,10 @@
 
 #include "aves.h"
 
+/** @class Eagle
+  * Kelas Eagle untuk membuat hewan elang
+  */
+
 class Eagle : public Aves {
   public:
     /**@brief Konstruktor.
