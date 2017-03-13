@@ -104,32 +104,30 @@ int main(){
   // PENCIPTAAN OBJEK
   for (i = 0; i < panjang; i++){
     for (j = 0; j < lebar; j++){
-      if (Peta[i][j] == '-'){
-        
-      } else if (Peta[i][j] == 'W') {
-        
-      } else if (Peta[i][j] == 'F') {
-        
-      } else if (Peta[i][j] == 'L') {
-      
-      } else if (Peta[i][j] == 'w') {
-        
-      } else if (Peta[i][j] == 'f') {
-        
-      } else if (Peta[i][j] == 'l') {
-	  
-	  } else if (Peta[i][j] == 'P') {
-      
-      } else if (Peta[i][j] == 'R') {
-      
+      switch (Peta[i][j]) {
+		/*
+	    case ('-') : Peta[i][j] = new Route; break;
+        case ('W') : Peta[i][j] = new ; break;
+        case ('F') : Peta[i][j] = new ; break;
+        case ('L') : Peta[i][j] = new ; break;
+        case ('w') : Peta[i][j] = new ; break;
+        case ('f') : Peta[i][j] = new ; break;
+        case ('l') : Peta[i][j] = new ; break;
+        case ('P') : Peta[i][j] = new ; break;
+        case ('R') : Peta[i][j] = new ; break;
+        case ('E') : Peta[i][j] = new ; break;
+        case ('X') : Peta[i][j] = new ; break;
+        */
       }
     }
   }
+  /*
   for (i = 0; i < panjang; i++){
     for (j = 0; j < lebar; j++){
       cout << Peta[i][j];
     }
     cout << endl;
   }
+  */
   return 0;
 }
