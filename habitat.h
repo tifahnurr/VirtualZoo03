@@ -12,15 +12,28 @@
 #include "cell.h"
 #include "cage.h"
 
+/** @class Habitat
+  * Kelas Habitat untuk membentuk habitat
+  */
+
 class Habitat : public Cell
 {
 public:
-    
+    /**@brief Constructor.
+      * Mengkonstruksi kelas Habitat
+      * @param make_cage Nilai boolean yang menyatakan habitat tersebut merupakan cage atau bukan*/
     Habitat (bool make_cage);
     
+    /**@brief Destructor.
+      *Mengdealokasi parameter dari habitat*/
     ~Habitat();
+    
+    /**@brief GetHabitat.
+      *Mengambil tipe dari habitat, land, air atau water*/
     char GetHabitat();
     
+    /**@brief IsCageAvailable.
+      * Memeriksa apakah habitat tersebut merupakan cage atau bukan*/
     bool IsCageAvailable();
     
 protected :
