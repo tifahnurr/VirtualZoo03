@@ -11,6 +11,10 @@
 
 #include "habitat.h"
 
+/** @class Air
+  * Kelas Air untuk membuat habitat udara (air habitat)
+  */
+
 class Air : public Habitat
 {
 	/**@brief Constructor
