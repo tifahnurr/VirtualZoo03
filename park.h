@@ -6,6 +6,6 @@ class Park: public Facility{
 	
 	private:
 
-}
+};
 
 #endif
