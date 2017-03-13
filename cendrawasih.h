@@ -3,6 +3,10 @@
 
 #include "aves.h"
 
+
+/** @class Cendrawasih
+  * Kelas Cendrawasih untuk membuat hewan cendrawasih
+  */
 class Cendrawasih : public Aves {
   public:
     /**@brief Konstruktor.
