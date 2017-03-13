@@ -3,6 +3,9 @@
 
 #include "reptile.h"
 
+/** @class Snake.
+  * Kelas Snake untuk membuat hewan ular
+  */
 class Snake : public Reptile {
   public:
     /**@brief Konstruktor.
