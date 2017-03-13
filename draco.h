@@ -3,6 +3,10 @@
 
 #include "reptile.h"
 
+/** @class Draco
+  * Kelas Draco untuk membuat hewan iguana terbang
+  */
+
 class Draco : public Reptile {
   public:
     /**@brief Konstruktor.
