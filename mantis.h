@@ -3,6 +3,9 @@
 
 #include "insect.h"
 
+/** @class Mantis
+  * Kelas Mantis untuk membuat hewan belalang sembah
+  */
 class Mantis : public Insect {
   public:
     /**@brief Konstruktor.
