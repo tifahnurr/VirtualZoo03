@@ -3,6 +3,11 @@
 
 #include "dietType.h"
 
+
+/** @class Omnivore
+  * Kelas Omnivore untuk membuat hewan dengan diet type omnivora
+  */
+
 class Omnivore : public DietType{
   public:
     /**@brief Constructor.
@@ -11,11 +16,12 @@ class Omnivore : public DietType{
    
     /**@brief Constructor.
      * Constructor dengan parameter*/
-		/**@param p porsi yang dibutuhkan oleh suatu animal*/
+    /**@param p porsi yang dibutuhkan oleh suatu animal*/
     Omnivore(int p);
     
     /**@brief feed.
-     * Memberi makan hewan berdasarkan jenis makanannya*/
+     * Memberi makan hewan berdasarkan jenis makanannya
+     * @param feed Nilai dari banyaknya makanan yang diberikan*/
     void Feeds(int feed);
     
     
