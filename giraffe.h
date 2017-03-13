@@ -4,7 +4,7 @@
 #include "mammal.h"
 
 /** @class Giraffe
-  * Kelas Giraffe untuk membuat hewan buaya
+  * Kelas Giraffe untuk membuat hewan jerapah
   */
 
 class Giraffe : public Mammal {
