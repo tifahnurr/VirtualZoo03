@@ -3,6 +3,10 @@
 
 #include "insect.h"
 
+
+/** @class Butterfly
+  * Kelas Butterfly untuk membuat hewan kupu kupu
+  */
 class Butterfly : public Insect {
   public:
     /**@brief Konstruktor.
