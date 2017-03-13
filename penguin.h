@@ -3,6 +3,9 @@
 
 #include "aves.h"
 
+/** @class Penguin.
+  * Kelas Penguin untuk membuat hewan penguin
+  */
 class Penguin : public Aves {
   public:
     /**@brief Konstruktor.
