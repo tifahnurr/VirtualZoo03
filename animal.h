@@ -8,6 +8,10 @@
 #include "herbivore.h"
 #include "carnivore.h"
 
+/** @class Animal
+  * Kelas Animal untuk membuat hewan
+  */
+
 class Animal : public Renderable{
   public:
     /**@brief Constructor.
