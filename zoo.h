@@ -2,6 +2,7 @@
 #define ZOO_H
 #include "cell.h"
 #include "cage.h"
+#include "facility.h"
 
 /** @class Zoo
   * Kelas Zoo untuk membuat Zoo dengan ukura tertentu
@@ -42,7 +43,7 @@ class Zoo{
     void LoadMap(char * map_name);
   
   private:
-    Cell **map;
+    Cell ***map;
 };
 
 #endif

@@ -3,7 +3,7 @@
 
 #include <string>
 #include <iostream>
-#include "Renderable.h"
+#include "renderable.h"
 #include "omnivore.h"
 #include "herbivore.h"
 #include "carnivore.h"
@@ -34,7 +34,7 @@ class Animal : public Renderable{
              
     /**@brief GetDiet.
      * Mengembalikan jenis pemakan apakah hewan tersebut*/
-    DietType GetDiet();
+    DietType* GetDiet();
     
     /**@brief GetHabitat.
      * Mengembalikan jenis habitat dari hewan*/
@@ -68,8 +68,6 @@ class Animal : public Renderable{
     /**@brief CalculateFood.
      * Menghitung gram makanan untuk hewan*/
     int CalculateFood();
-    
-    static int number_animal;
     
   protected:
     DietType* diet;

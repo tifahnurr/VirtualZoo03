@@ -15,15 +15,15 @@ Water::Water(bool make_cage) : Habitat(make_cage)
    habitat = 'w';
 }
 
-void Water::cleanWater()
+void Water::CleanWater()
 {
     cout << "The water is being cleaned" << endl;
 }
-void Water::putWPlant()
+void Water::PutWPlant()
 {
     cout << "Putting water plant in the water" << endl;
 }
-void Water::putRock()
+void Water::PutRock()
 {
     cout << "Putting rock in the water" << endl;
 }

@@ -23,16 +23,19 @@ Habitat::Habitat (bool make_cage)
     
 }
 
-Habitat::~Habitat()
-{
-    delete cage;
-}
-char Habitat::GetHabitat()
-{
-    return habitat;
+Habitat::~Habitat(){
+	delete cage;
 }
 
 bool Habitat::IsCageAvailable()
 {
-    return ((cage!=NULL) && (cage->IsCageEmpty()));
+    return ((cage!=nil_cage) && (cage->IsCageEmpty()));
+}
+
+Cage* Habitat::GetCage(){
+	return cage;
+}
+
+char Habitat::GetHabitat(){
+	return habitat;
 }

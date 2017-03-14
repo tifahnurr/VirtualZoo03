@@ -24,15 +24,15 @@ class Water : public Habitat
     
     /**@brief cleanWater
      * membersihkan air di habitat air*/
-    void cleanWater();
+    void CleanWater();
     
     /**@brief putWPlant
      * Meletakkan tanaman air di habitat air*/
-    void putWPlant();
+    void PutWPlant();
     
     /**@brief putRock
      * meletakkan batu di habitat air */
-    void putRock();
+    void PutRock();
     
 };
 
