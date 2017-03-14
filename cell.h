@@ -67,10 +67,32 @@ class Cell : public Renderable{
     virtual void PutRock();
     
     virtual char Render();
-		
+    
+    /**@brief InitBoolVisited
+     * menginisialisasi boolean visited dengan false (belum dikunjungi) */
+    void Cell::InitBoolVisited()
+    
+    /**@brief IsVisited
+     * Fungsi yang mempresentasikan apakah cell sudah dikunjungi atau belum */
+    bool IsVisited();
+    
+    /**@brief SetBool
+     * Fungsi mengganti boolean visited cell */
+    void Cell::SetBool(bool x)
+    
+    /**@brief SetAbsis
+     * mengubah koordinat absis cell */
+    void SetAbsis(int a);
+    
+    /**@brief SetOrdinat
+     * mengubah koordinat ordinat cell */
+    void SetOrdinat(int b);
 		
 	protected:
 		char code;
+		int x;
+		int y;
+    		bool visited;
 	
 };
 
