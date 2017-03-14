@@ -12,8 +12,8 @@ PPP---PPP--wWWWw--LLLLLLL--LLlllllllRR--PP--FFFFFf
 RRR---RRR--wWWWw--LLLLLLL--LLLLLLlllRR--PP--ffffff
 RRR---RRR--FFFFF--LLLLLLL--LLLLLLlllRR----------RR
 PPPPPPPPP--FFFFF--LLLLLLL--LLlllllllRR----------RR
-PPPPPPPPP--FFFFF--llWWWll--wWWWWWwwwwwwwWW--LLLLPP
-FFFFFffff--wWWWw--llWWWll--wWWWWWwwwwwwwWW--LLLLPP
+PPPPPPPPP--FFFFF--llWWWll--WWWWWWwwwwwwwWW--LLLLPP
+FFFFFffff--wWWWw--llWWWll--WWWWWWwwwwwwwWW--LLLLPP
 FFFFFffff--wWWWw--llWWWll--fffffffffffffWW--LLLLPP
 -----------wWWWw--llWWWll--FFFFFFFFFFFFFWW--LLLLPP
 ----------------------------------------WW--LLLLPP
