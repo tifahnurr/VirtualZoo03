@@ -3,9 +3,9 @@ FFFF--PPP--WWWWW--FFfffFF--LLLFFFLLL-LLLLLLLllllll
 ffff--RRR--lLLLl--FFRRRFF--LLLFFFLLL-LLLLLLLllllll
 ffff-------lLLLl--FFRRRFF--LLLFFFLLL-LLLLLLLllllll
 ffff-------lLLLl----------------------------WWWWww
-WWWWwwwww--lLLLl----------------------------WWWWww
-WWWWwwwww--lLLLl--llWWWll--FFFFFFFFFRR--PP--ffffff
-WWWWwwwww--lLLLl--llWWWll--fffffffffRR--PP--FFFFFf
+wwwwWWWWW--lLLLl----------------------------WWWWww
+wwwwWWWWW--lLLLl--llWWWll--FFFFFFFFFRR--PP--ffffff
+wwwwWWWWW--lLLLl--llWWWll--fffffffffRR--PP--FFFFFf
 ------------------llWWWll--WWWWWWwwwRR--PP--FFFFFf
 ------------------llWWWll--WWWWWWwwwRR--PP--FFFFFf
 PPP---PPP--wWWWw--LLLLLLL--LLlllllllRR--PP--FFFFFf
