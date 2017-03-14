@@ -32,6 +32,7 @@ class Zoo{
       * Memindahkan animal
       * @param x Lokasi x dari animal yang akan dipindahkan
       * @param y Lokasi y dari animal yang akan dipindahkan
+      * @param to Arah gerak animal yang akan dipindahkan
      */
     void MoveAnimal(int x, int y , int to);
     
