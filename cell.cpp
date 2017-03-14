@@ -26,7 +26,7 @@ void Cell::PutWPlant(){}
     
 void Cell::PutRock(){}
 
-char Cell::Render(){return 'a';}
+char Cell::Render(){return code;}
 		
 void Cell::InitBoolVisited() {visited = false;}
 
