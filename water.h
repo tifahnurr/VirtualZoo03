@@ -17,6 +17,7 @@
   */
 class Water : public Habitat
 {
+  public:
     /**@brief Constructor.
      * Mengkonstruksi kelas Water
      * @param make_cage Status saat pembuatan habitat water, apakah akan dibuat cage atau bukan*/

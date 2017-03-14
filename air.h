@@ -17,6 +17,7 @@
 
 class Air : public Habitat
 {
+	public:
 	/**@brief Constructor
 	 * Mengalokasi parameter-parameter Air
 	 * @param make_cage Status bahwa dalam habitat Air adalah cage atau bukan*/

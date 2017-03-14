@@ -1,7 +1,7 @@
 #ifndef omnivore_h
 #define omnivore_h
 
-#include "dietType.h"
+#include "diet_type.h"
 
 
 /** @class Omnivore

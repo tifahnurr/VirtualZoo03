@@ -9,7 +9,7 @@
 #ifndef carnivore_h
 #define carnivore_h
 
-#include "dietType.h"
+#include "diet_type.h"
 
 /** @class Carnivore
   * Kelas Carnivore untuk membuat hewan dengan diet tyoe carnivore

@@ -35,15 +35,23 @@ class Zoo{
      */
     void MoveAnimal(int x, int y , int to);
     
-    /**@brief mengecek apakah bisa memindahkan hewan
+    /**@brief CanMoveAnimal
+     * mengecek apakah bisa memindahkan hewan
      */
     bool CanMoveAnimal(int fromx, int fromy, int tox, int toy);
     /**@brief load file eksternal map
      */
     void LoadMap(char * map_name);
   
+  
+  int GetPanjang();
+  
+  int GetLebar();
   private:
     Cell ***map;
+    Animal **animal;
+    const int p;
+    const int l;
 };
 
 #endif

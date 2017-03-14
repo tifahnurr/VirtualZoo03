@@ -9,7 +9,7 @@
 #ifndef herbivore_h
 #define herbivore_h
 
-#include "dietType.h"
+#include "diet_type.h"
 
 /** @class Herbivore
   * Kelas Herbivore untuk membuat hewan dengan diet type jenis herbivora

@@ -5,4 +5,4 @@ class Gate: public Facility{
 		
 	protected:
 		char GateType;
-}
+};

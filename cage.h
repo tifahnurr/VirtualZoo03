@@ -33,9 +33,8 @@ public:
       * Meletakkan hewan di cage tertentu*/
     void SetAnimal(Animal *x);
     
-    
-private:
     Animal *nAnimal = NULL;
+private:
     Animal *penghuni;
     
 };
