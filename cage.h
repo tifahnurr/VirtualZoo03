@@ -27,16 +27,16 @@ public:
     
     /** @brief getAnimal
       * Melihat hewan apa yang ada di cage tertentu*/ 
-    Animal& GetAnimal();
+    Animal* GetAnimal();
     
     /** @brief setAnimal
       * Meletakkan hewan di cage tertentu*/
-    void SetAnimal(Animal &x);
+    void SetAnimal(Animal *x);
   
     void ClearAnimal();
   
     
-private:
+protected:
     Animal *nAnimal = NULL;
     Animal *penghuni;
     
