@@ -28,3 +28,12 @@ void Cell::PutRock(){}
 
 char Cell::Render(){return 'a';}
 		
+void Cell::InitBoolVisited() {visited = false;}
+
+bool Cell::IsVisited() {return visited;}
+
+void Cell::SetBool(bool x) {visited = x;}
+    
+void Cell::SetAbsis(int a) {x = a;}
+    
+void Cell::SetOrdinat(int b) {y = b;}
