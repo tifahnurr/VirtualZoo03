@@ -82,6 +82,82 @@ int main(){
   Zoo Peta(panjang,lebar);
   LoadMap(Peta);
   LoadingScreen();
+  
+  int x,y;
+  
+  for (int i = 0; i < panjang; i++){
+    for (int j = 0; j < lebar; j++){
+      cout << Peta[i][j];
+    }
+    cout << endl;
+  }
+  
+  initscr();
+  getmaxyx(stdscr,y,x);
+  start_color();
+  
+  init_pair(1, COLOR_WHITE, COLOR_RED);
+  init_pair(2, COLOR_WHITE, COLOR_GREEN);
+  init_pair(3, COLOR_WHITE, COLOR_YELLOW);
+  init_pair(4, COLOR_WHITE, COLOR_BLUE);
+  init_pair(5, COLOR_WHITE, COLOR_MAGENTA);
+  init_pair(6, COLOR_WHITE, COLOR_CYAN);
+  init_pair(7, COLOR_WHITE, COLOR_WHITE);
+  
+  for (int i = 1; i <= panjang+1; i++){
+	for (int j = 1; j <= lebar; j++){
+	  switch (Peta[i-1][j-1]) {
+        case ('-') :
+		attron(COLOR_PAIR(3));
+        mvprintw(i,j," ");
+        refresh(); attroff(COLOR_PAIR(3)); break;
+        case ('W') :
+        attron(COLOR_PAIR(6));
+        mvprintw(i,j,"X");
+        refresh(); attroff(COLOR_PAIR(6)); break;
+        case ('F') :
+        attron(COLOR_PAIR(5));
+        mvprintw(i,j,"X");
+        refresh(); attroff(COLOR_PAIR(5)); break;
+        case ('L') :
+        attron(COLOR_PAIR(2));
+        mvprintw(i,j,"X");
+        refresh(); attroff(COLOR_PAIR(2)); break;
+        case ('w') :
+        attron(COLOR_PAIR(6));
+        mvprintw(i,j," ");
+        refresh(); attroff(COLOR_PAIR(6)); break;
+        case ('f') :
+        attron(COLOR_PAIR(5));
+        mvprintw(i,j," ");
+        refresh(); attroff(COLOR_PAIR(5)); break;
+        case ('l') :
+        attron(COLOR_PAIR(2));
+        mvprintw(i,j," ");
+        refresh(); attroff(COLOR_PAIR(2)); break;
+        case ('P') :
+        attron(COLOR_PAIR(7));
+        mvprintw(i,j," ");
+        refresh(); attroff(COLOR_PAIR(7)); break;
+        case ('R') :
+        attron(COLOR_PAIR(1));
+        mvprintw(i,j," ");
+        refresh(); attroff(COLOR_PAIR(1)); break;
+        case ('E') :
+        attron(COLOR_PAIR(3));
+        mvprintw(i,j," ");
+        refresh(); attroff(COLOR_PAIR(3)); break;
+        case ('X') :
+        attron(COLOR_PAIR(3));
+        mvprintw(i,j," ");
+        refresh(); attroff(COLOR_PAIR(3)); break;
+        }
+      }
+	}
+  cout << endl;
+  getch();
+  endwin();
+  
   return 0;
 }
 
