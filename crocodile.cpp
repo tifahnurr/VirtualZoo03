@@ -18,7 +18,6 @@ Crocodile::Crocodile(int w) : Reptile(w){
   sound= "Rawr";
   tame = false;
   is_animal=true;
-  number_animal++;
 }
   
 Crocodile::~Crocodile(){

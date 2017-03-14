@@ -11,29 +11,16 @@
 
 #include "habitat.h"
 
-
-/** @class Water
-  * Kelas Water untuk membuat habitat water
-  */
 class Water : public Habitat
 {
-  public:
-    /**@brief Constructor.
-     * Mengkonstruksi kelas Water
-     * @param make_cage Status saat pembuatan habitat water, apakah akan dibuat cage atau bukan*/
-    Water(bool make_cage);
+public:
+  Water(bool make_cage);
     
-    /**@brief cleanWater
-     * membersihkan air di habitat air*/
-    void CleanWater();
+    void cleanWater();
     
-    /**@brief putWPlant
-     * Meletakkan tanaman air di habitat air*/
-    void PutWPlant();
+    void putWPlant();
     
-    /**@brief putRock
-     * meletakkan batu di habitat air */
-    void PutRock();
+    void putRock();
     
 };
 

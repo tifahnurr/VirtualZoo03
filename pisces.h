@@ -2,15 +2,12 @@
 #define pisces_h
 
 #include "animal.h"
-
-/**@class Pisces
-  *Kelas pisces untuk membuat hewan dengan tipe pisces*/
 class Pisces : public Animal{
 	public:
     
     /**@brief Constructor
      * alokasi untuk pisces 
-     * @param Nilai dari berat badan hewan pisces*/
+     * @param w , berat dari berat badan hewan pisces*/
     Pisces(int w);
     
 		/**@brief Interaksi.

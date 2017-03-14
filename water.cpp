@@ -12,18 +12,22 @@
 using namespace std;
 Water::Water(bool make_cage) : Habitat(make_cage)
 {
-   habitat = 'w';
+  if (make_cage){
+    code = 'W';
+  } else{
+    code = 'w';
+  }
 }
 
-void Water::CleanWater()
+void Water::cleanWater()
 {
     cout << "The water is being cleaned" << endl;
 }
-void Water::PutWPlant()
+void Water::putWPlant()
 {
     cout << "Putting water plant in the water" << endl;
 }
-void Water::PutRock()
+void Water::putRock()
 {
     cout << "Putting rock in the water" << endl;
 }

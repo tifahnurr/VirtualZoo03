@@ -6,7 +6,6 @@
 
 class Route : public Facility {
 	public:
-		//Route();
-		
+		Route();
 	protected:
 };

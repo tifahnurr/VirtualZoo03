@@ -1,5 +1,5 @@
 // file : DietType.cpp
-#include "dietType.h"
+#include "diet_type.h"
 #include <iostream>
 
 using namespace std;

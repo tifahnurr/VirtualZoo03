@@ -32,18 +32,16 @@ class Zoo{
       * Memindahkan animal
       * @param x Lokasi x dari animal yang akan dipindahkan
       * @param y Lokasi y dari animal yang akan dipindahkan
-      * @param to Arah gerak animal yang akan dipindahkan
      */
-    void MoveAnimal(int x, int y , int to);
+    void MoveAnimal(int x, int y );
     
     /**@brief CanMoveAnimal
      * mengecek apakah bisa memindahkan hewan
      */
     bool CanMoveAnimal(int fromx, int fromy, int tox, int toy);
-    /**@brief load file eksternal map
+    /**@brief mengembalikan cell ke i,j
      */
-    void LoadMap(char * map_name);
-  
+    Cell* GetCell(int i, int j);
   
   int GetPanjang();
   

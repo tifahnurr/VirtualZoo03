@@ -1,10 +1,16 @@
-#include "facility.h"
 
+#include "facility.h"
 /** @class Restaurant
   * Kelas Restaurant untuk membuat restaurant
   */
 class Restaurant: public Facility{
 	public:
-		//Restaurant();
-	protected:
+  
+  Restaurant();
+  
+  void DisplayFood();
+	
+	private:
+  
+  char x[20];
 };

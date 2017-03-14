@@ -2,7 +2,7 @@
 #include <time.h>
 #include <string.h>
 #include <fstream>
-//#include <curses.h>
+#include <curses.h>
 #include "stdlib.h"
 #include "zoo.h"
 
@@ -11,7 +11,7 @@ using namespace std;
 void delay(int milliseconds){
   long pause;
   clock_t now,then;
-
+  
   pause = milliseconds*(CLOCKS_PER_SEC/1000);
   now = then = clock();
   while ((now-then) < pause){
@@ -20,16 +20,16 @@ void delay(int milliseconds){
 };
 
 void clearscr(void){
-  #ifdef _WIN32
-      system("cls");
-  #elif defined(unix) || defined(__unix__) || defined(__unix) || (defined(__APPLE__) && defined(__MACH__))
-      system("clear");
+#ifdef _WIN32
+  system("cls");
+#elif defined(unix) || defined(__unix__) || defined(__unix) || (defined(__APPLE__) && defined(__MACH__))
+  system("clear");
   //add some other OSes here if needed
-  #else
-      #error "OS not supported."
-      //you can also throw an exception indicating the function can't be used
-  #endif
-} 
+#else
+#error "OS not supported."
+  //you can also throw an exception indicating the function can't be used
+#endif
+}
 
 void LoadingScreen(){
   int i,j;
@@ -75,7 +75,7 @@ void LoadingScreen(){
 void LoadMap(Zoo& zoo);
 
 int main(){
-
+  
   int i, j;
   static const int panjang = 25;
   static const int lebar = 50;
@@ -87,7 +87,7 @@ int main(){
   
   for (int i = 0; i < panjang; i++){
     for (int j = 0; j < lebar; j++){
-      cout << Peta[i][j];
+      cout << Peta.GetCell(i, j)->Render();
     }
     cout << endl;
   }
@@ -105,55 +105,55 @@ int main(){
   init_pair(7, COLOR_WHITE, COLOR_WHITE);
   
   for (int i = 1; i <= panjang+1; i++){
-	for (int j = 1; j <= lebar; j++){
-	  switch (Peta[i-1][j-1]) {
+    for (int j = 1; j <= lebar; j++){
+      switch (Peta.GetCell(i-1,j-1)->Render()) {
         case ('-') :
-		attron(COLOR_PAIR(3));
-        mvprintw(i,j," ");
-        refresh(); attroff(COLOR_PAIR(3)); break;
+          attron(COLOR_PAIR(3));
+          mvprintw(i,j," ");
+          refresh(); attroff(COLOR_PAIR(3)); break;
         case ('W') :
-        attron(COLOR_PAIR(6));
-        mvprintw(i,j,"X");
-        refresh(); attroff(COLOR_PAIR(6)); break;
+          attron(COLOR_PAIR(6));
+          mvprintw(i,j,"X");
+          refresh(); attroff(COLOR_PAIR(6)); break;
         case ('F') :
-        attron(COLOR_PAIR(5));
-        mvprintw(i,j,"X");
-        refresh(); attroff(COLOR_PAIR(5)); break;
+          attron(COLOR_PAIR(5));
+          mvprintw(i,j,"X");
+          refresh(); attroff(COLOR_PAIR(5)); break;
         case ('L') :
-        attron(COLOR_PAIR(2));
-        mvprintw(i,j,"X");
-        refresh(); attroff(COLOR_PAIR(2)); break;
+          attron(COLOR_PAIR(2));
+          mvprintw(i,j,"X");
+          refresh(); attroff(COLOR_PAIR(2)); break;
         case ('w') :
-        attron(COLOR_PAIR(6));
-        mvprintw(i,j," ");
-        refresh(); attroff(COLOR_PAIR(6)); break;
+          attron(COLOR_PAIR(6));
+          mvprintw(i,j," ");
+          refresh(); attroff(COLOR_PAIR(6)); break;
         case ('f') :
-        attron(COLOR_PAIR(5));
-        mvprintw(i,j," ");
-        refresh(); attroff(COLOR_PAIR(5)); break;
+          attron(COLOR_PAIR(5));
+          mvprintw(i,j," ");
+          refresh(); attroff(COLOR_PAIR(5)); break;
         case ('l') :
-        attron(COLOR_PAIR(2));
-        mvprintw(i,j," ");
-        refresh(); attroff(COLOR_PAIR(2)); break;
+          attron(COLOR_PAIR(2));
+          mvprintw(i,j," ");
+          refresh(); attroff(COLOR_PAIR(2)); break;
         case ('P') :
-        attron(COLOR_PAIR(7));
-        mvprintw(i,j," ");
-        refresh(); attroff(COLOR_PAIR(7)); break;
+          attron(COLOR_PAIR(7));
+          mvprintw(i,j," ");
+          refresh(); attroff(COLOR_PAIR(7)); break;
         case ('R') :
-        attron(COLOR_PAIR(1));
-        mvprintw(i,j," ");
-        refresh(); attroff(COLOR_PAIR(1)); break;
+          attron(COLOR_PAIR(1));
+          mvprintw(i,j," ");
+          refresh(); attroff(COLOR_PAIR(1)); break;
         case ('E') :
-        attron(COLOR_PAIR(3));
-        mvprintw(i,j," ");
-        refresh(); attroff(COLOR_PAIR(3)); break;
+          attron(COLOR_PAIR(3));
+          mvprintw(i,j," ");
+          refresh(); attroff(COLOR_PAIR(3)); break;
         case ('X') :
-        attron(COLOR_PAIR(3));
-        mvprintw(i,j," ");
-        refresh(); attroff(COLOR_PAIR(3)); break;
-        }
+          attron(COLOR_PAIR(3));
+          mvprintw(i,j," ");
+          refresh(); attroff(COLOR_PAIR(3)); break;
       }
-	}
+    }
+  }
   cout << endl;
   getch();
   endwin();
@@ -169,11 +169,11 @@ void LoadMap(Zoo& zoo){
   
   if(file.is_open()){
     for(int i = 0; i < zoo.GetPanjang(); i++){
-        string row;
-        getline (file, row);
-        if (file >> row){
-          for (int j = 0; j != min<int>(zoo.GetLebar(),row.length()); ++j){
-            zoo.SetCell(row[j],i,j);
+      string row;
+      getline (file, row);
+      if (file >> row){
+        for (int j = 0; j != min<int>(zoo.GetLebar(),row.length()); ++j){
+          zoo.SetCell(row[j],i,j);
         }
       } else break;
     }

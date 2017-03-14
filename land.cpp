@@ -11,16 +11,11 @@
 
 Land::Land(bool make_cage): Habitat(make_cage)
 {
-  if (make_cage)
-    {
-        cage = new Cage;
-        
-    }
- else
-    {
-        cage = nil_cage;
-    }
-    
+  if (make_cage){
+    code = 'L';
+  }else {
+  code = 'l';
+  }
 }
 void Land::WaterTree()
 {

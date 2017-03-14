@@ -37,5 +37,5 @@ Cage* Habitat::GetCage(){
 }
 
 char Habitat::GetHabitat(){
-	return habitat;
+	return code;
 }

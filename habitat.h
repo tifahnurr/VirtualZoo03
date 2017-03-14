@@ -44,7 +44,6 @@ public:
 protected :
     Cage *nil_cage = NULL ;
     Cage *cage;
-    char habitat;
 };
 
 

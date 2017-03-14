@@ -1,7 +1,7 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
-#include <string.h>
+#include <string>
 #include <iostream>
 #include "renderable.h"
 #include "omnivore.h"
