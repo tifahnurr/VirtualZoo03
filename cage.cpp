@@ -1,10 +1,3 @@
-//
-//  cage.cpp
-//  Header
-//
-//  Created by Richard Matthew on 3/12/17.
-//  Copyright © 2017 MatthewRichard20. All rights reserved.
-//
 
 #include <iostream>
 #include "cage.h"
@@ -19,9 +12,9 @@ bool Cage::IsCageEmpty()
   return penghuni !=nAnimal;
 }
 
-Animal& Cage::GetAnimal()
+Animal* Cage::GetAnimal()
 {
-  return *penghuni;
+  return penghuni;
 }
 
 void Cage::SetAnimal(Animal &x)
