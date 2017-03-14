@@ -2,7 +2,7 @@
 #include <time.h>
 #include <string.h>
 #include <fstream>
-#include <curses.h>
+//#include <curses.h>
 #include "stdlib.h"
 #include "zoo.h"
 
@@ -72,31 +72,35 @@ void LoadingScreen(){
   clearscr();
 };
 
+void LoadMap(Zoo& zoo);
+
 int main(){
 
   int i, j;
   static const int panjang = 25;
   static const int lebar = 50;
-  Peta = new Zoo(panjang,lebar);
-  
+  Zoo Peta(panjang,lebar);
+  LoadMap(Peta);
   LoadingScreen();
-  // Membuka file eksternal map dan memindahkan ke matriks Zoo
-  LoadMap("map.txt");
-  
-  // Penciptaan objek pada Zoo
-  for (i = 0; i < panjang; i++){
-    for (j = 0; j < lebar; j++){
-      SetCell(Peta[i][j],i,j);
-    }
-  }
-  
-  /*
-  for (i = 0; i < panjang; i++){
-    for (j = 0; j < lebar; j++){
-      cout << Peta[i][j];
-    }
-    cout << endl;
-  }
-  */
   return 0;
+}
+
+
+void LoadMap(Zoo& zoo){
+  
+  string line;
+  ifstream file ("map.txt");
+  
+  if(file.is_open()){
+    for(int i = 0; i < zoo.GetPanjang(); i++){
+        string row;
+        getline (file, row);
+        if (file >> row){
+          for (int j = 0; j != min<int>(zoo.GetLebar(),row.length()); ++j){
+            zoo.SetCell(row[j],i,j);
+        }
+      } else break;
+    }
+  }
+  file.close();
 }
