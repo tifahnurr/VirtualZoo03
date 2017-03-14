@@ -44,12 +44,12 @@ void Zoo::SetCell(char c, int i , int j){
 // @brief memindahkan hewan
 void Zoo::MoveAnimal(int x, int y){
   int to = (rand()%4)+1;
-  int tox=x;
-  int toy=y;
   int count = 0;
   bool moved = false;
   while ((!moved) && (count<4)){
     count++;
+    int tox=x;
+    int toy=y;
     switch (to){
       case 1 :
         tox++;
