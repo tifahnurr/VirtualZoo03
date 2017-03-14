@@ -2,6 +2,9 @@
 #define pisces_h
 
 #include "animal.h"
+
+/**@class Pisces
+  *Kelas pisces untuk membuat hewan dengan tipe pisces*/
 class Pisces : public Animal{
 	public:
     
