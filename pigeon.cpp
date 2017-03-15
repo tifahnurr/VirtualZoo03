@@ -8,7 +8,7 @@ Pigeon :: Pigeon(int w) : Aves(w)
 {
   diet = new Herbivore(40);
   habitat = new char[2];
-  habitat[0] = 'a';
+  habitat[0] = 'f';
   habitat[1] = '0';
   code='p';
   name = "Burung merpati";

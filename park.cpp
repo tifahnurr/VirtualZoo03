@@ -5,6 +5,6 @@ Park::Park(){
   code = 'P';
 }
 
-void Park::Interact(){
+void Park::ViewPark(){
   cout << "Di taman ini terdapat banyak pohon, bangku-bangku dan air mancur" << endl;
 }

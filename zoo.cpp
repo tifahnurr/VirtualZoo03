@@ -9,6 +9,28 @@
 #include "restaurant.h"
 #include "park.h"
 #include "lion.h"
+#include "giraffe.h"
+#include "eagle.h"
+#include "snake.h"
+#include "sting_ray.h"
+#include "butterfly.h"
+#include "penguin.h" //
+#include "tiger.h"
+#include "shark.h"
+#include "zebra.h"
+#include "bat.h"
+#include "hippo.h"
+#include "pigeon.h"
+#include "swan.h"
+#include "cendrawasih.h"
+#include "blue_tang.h"
+#include "clown_fish.h"
+#include "Crocodile.h"
+#include "draco.h"
+#include "komodo.h"
+#include "roach.h"
+#include "mantis.h"
+#include "dragonfly.h"
 using namespace std;
 
 // @brief Ctor with paramaters
@@ -79,7 +101,7 @@ void Zoo::MoveAnimal(int x, int y){
  */
 bool Zoo::CanMoveAnimal(int fromx, int fromy, int tox, int toy)
 {
-  return ((map[fromx][fromy]->Render() == map[tox][toy]->Render()) && (map[tox][toy]->IsCageAvailable()));
+  return ((map[fromx][fromy]->GetHabitat() == map[tox][toy]->GetHabitat()) && (map[tox][toy]->IsCageAvailable()));
 }
 
 Cell* Zoo::GetCell(int i, int j)
@@ -94,84 +116,88 @@ int Zoo::GetLebar(){
   return l;
 }
 
+int Zoo::GetEntP(){ return ent_p;};
+
+int Zoo::GetEntL(){return ent_l;};
+
 int Zoo::GetNAnimal(){
   return n_animal;
 }
 
 void Zoo::SetAnimals(){
-  Animal* lion = new Lion(60);
-  if (GetCell(0,28)->GetCage()!=NULL){
-    GetCell(0,28)->GetCage()->SetAnimal(lion);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetY(0);
-    animal[n_animal]=lion;
+  Animal* eagle1 = new Eagle(60);
+  if (GetCell(1,1)->GetCage()!=NULL){
+    GetCell(1,1)->GetCage()->SetAnimal(eagle1);
+    GetCell(1,1)->GetCage()->GetAnimal()->SetX(1);
+    GetCell(1,1)->GetCage()->GetAnimal()->SetY(1);
+    animal[n_animal]=eagle1;
     n_animal++;
   }
-  Animal* lion = new Lion(60);
-  if (GetCell(0,28)->GetCage()!=NULL){
-    GetCell(0,28)->GetCage()->SetAnimal(lion);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetY(0);
-    animal[n_animal]=lion;
+  Animal* blue_tang1 = new BlueTang(60);
+  if (GetCell(0,13)->GetCage()!=NULL){
+    GetCell(0,13)->GetCage()->SetAnimal(blue_tang1);
+    GetCell(0,13)->GetCage()->GetAnimal()->SetX(13);
+    GetCell(0,13)->GetCage()->GetAnimal()->SetY(0);
+    animal[n_animal]=blue_tang1;
     n_animal++;
   }
-  Animal* lion = new Lion(60);
-  if (GetCell(0,28)->GetCage()!=NULL){
-    GetCell(0,28)->GetCage()->SetAnimal(lion);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetY(0);
-    animal[n_animal]=lion;
+  Animal* butterfly1 = new Butterfly(60);
+  if (GetCell(2,18)->GetCage()!=NULL){
+    GetCell(2,18)->GetCage()->SetAnimal(butterfly1);
+    GetCell(2,18)->GetCage()->GetAnimal()->SetX(18);
+    GetCell(2,18)->GetCage()->GetAnimal()->SetY(2);
+    animal[n_animal]=butterfly1;
     n_animal++;
   }
-  Animal* lion = new Lion(60);
-  if (GetCell(0,28)->GetCage()!=NULL){
-    GetCell(0,28)->GetCage()->SetAnimal(lion);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetY(0);
-    animal[n_animal]=lion;
+  Animal* draco1 = new Draco(60);
+  if (GetCell(3,22)->GetCage()!=NULL){
+    GetCell(3,22)->GetCage()->SetAnimal(draco1);
+    GetCell(3,22)->GetCage()->GetAnimal()->SetX(28);
+    GetCell(3,22)->GetCage()->GetAnimal()->SetY(0);
+    animal[n_animal]=draco1;
     n_animal++;
   }
-  Animal* lion = new Lion(60);
-  if (GetCell(0,28)->GetCage()!=NULL){
-    GetCell(0,28)->GetCage()->SetAnimal(lion);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetY(0);
-    animal[n_animal]=lion;
+  Animal* giraffe1 = new Giraffe(60);
+  if (GetCell(3,13)->GetCage()!=NULL){
+    GetCell(3,13)->GetCage()->SetAnimal(giraffe1);
+    GetCell(3,13)->GetCage()->GetAnimal()->SetX(13);
+    GetCell(3,13)->GetCage()->GetAnimal()->SetY(3);
+    animal[n_animal]=giraffe1;
     n_animal++;
   }
-  Animal* lion = new Lion(60);
-  if (GetCell(0,28)->GetCage()!=NULL){
-    GetCell(0,28)->GetCage()->SetAnimal(lion);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetY(0);
-    animal[n_animal]=lion;
+  Animal* lion1 = new Lion(60);
+  if (GetCell(1,26)->GetCage()!=NULL){
+    GetCell(1,26)->GetCage()->SetAnimal(lion1);
+    GetCell(1,26)->GetCage()->GetAnimal()->SetX(26);
+    GetCell(1,26)->GetCage()->GetAnimal()->SetY(1);
+    animal[n_animal]=lion1;
     n_animal++;
   }
-  Animal* lion = new Lion(60);
-  if (GetCell(0,28)->GetCage()!=NULL){
-    GetCell(0,28)->GetCage()->SetAnimal(lion);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetY(0);
-    animal[n_animal]=lion;
+  Animal* pigeon1 = new Pigeon(60);
+  if (GetCell(2,30)->GetCage()!=NULL){
+    GetCell(2,30)->GetCage()->SetAnimal(pigeon1);
+    GetCell(2,30)->GetCage()->GetAnimal()->SetX(30);
+    GetCell(2,30)->GetCage()->GetAnimal()->SetY(2);
+    animal[n_animal]=pigeon1;
     n_animal++;
   }
-  Animal* lion = new Lion(60);
-  if (GetCell(0,28)->GetCage()!=NULL){
-    GetCell(0,28)->GetCage()->SetAnimal(lion);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetY(0);
-    animal[n_animal]=lion;
+  Animal* roach1 = new Roach(60);
+  if (GetCell(2,33)->GetCage()!=NULL){
+    GetCell(2,33)->GetCage()->SetAnimal(roach1);
+    GetCell(2,33)->GetCage()->GetAnimal()->SetX(33);
+    GetCell(2,33)->GetCage()->GetAnimal()->SetY(2);
+    animal[n_animal]=roach1;
     n_animal++;
   }
-  Animal* lion = new Lion(60);
-  if (GetCell(0,28)->GetCage()!=NULL){
-    GetCell(0,28)->GetCage()->SetAnimal(lion);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
-    GetCell(0,28)->GetCage()->GetAnimal()->SetY(0);
-    animal[n_animal]=lion;
+  Animal* penguin1 = new Penguin(60);
+  if (GetCell(1,36)->GetCage()!=NULL){
+    GetCell(1,36)->GetCage()->SetAnimal(penguin1);
+    GetCell(1,36)->GetCage()->GetAnimal()->SetX(36);
+    GetCell(1,36)->GetCage()->GetAnimal()->SetY(1);
+    animal[n_animal]=penguin1;
     n_animal++;
   }
-  Animal* lion = new Lion(60);
+  /*Animal* lion = new Lion(60);
   if (GetCell(0,28)->GetCage()!=NULL){
     GetCell(0,28)->GetCage()->SetAnimal(lion);
     GetCell(0,28)->GetCage()->GetAnimal()->SetX(28);
@@ -265,4 +291,5 @@ void Zoo::SetAnimals(){
     animal[n_animal]=lion;
     n_animal++;
   }
+   */
 }

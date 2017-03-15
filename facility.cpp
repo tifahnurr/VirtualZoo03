@@ -5,6 +5,3 @@ Facility::Facility(){
 
 Facility::~Facility(){
 }
-
-void Facility::Interact(){
-}

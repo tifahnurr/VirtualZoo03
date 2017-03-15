@@ -6,7 +6,6 @@
 #include "stdlib.h"
 #include "zoo.h"
 #include "lion.h"
-#include "driver.h"
 
 using namespace std;
 
@@ -81,7 +80,7 @@ int Zoo::n_animal=0;
 int main(){
   
   int i, j;
-  static const int panjang = 26;
+  static const int panjang = 25;
   static const int lebar = 50;
   Zoo Peta(panjang,lebar);
   LoadMap(Peta);
@@ -91,8 +90,21 @@ int main(){
   
   Peta.SetAnimals();
   
-  Driver::Tour(Peta);
+    for (int i = 0; i < panjang; i++){
+      for (int j = 0; j < lebar; j++){
+        cout << Peta.GetCell(i, j)->Render();
+      }
+      cout << endl;
+    }
   
+  /*  Peta.MoveAnimal(1, 1);
+  for (int i = 0; i < panjang; i++){
+    for (int j = 0; j < lebar; j++){
+      cout << Peta.GetCell(i, j)->Render();
+    }
+    cout << endl;
+  }
+  */
   /*initscr();
   getmaxyx(stdscr,y,x);
   start_color();
@@ -166,7 +178,7 @@ int main(){
 void LoadMap(Zoo& zoo){
   
   string line;
-  ifstream file ("map.txt");
+  ifstream file ("/Users/RichardMatthew/Documents/Programming/C++/YipYipAppa/Final3.0/Final3.0/map.txt");
   
   if(file.is_open()){
     for(int i = 0; i < zoo.GetPanjang(); i++){

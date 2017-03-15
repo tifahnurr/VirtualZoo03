@@ -1,4 +1,4 @@
-#include "clownFish.h"
+#include "clown_fish.h"
   /*protected:
     DietType* diet;
     char* habitat;
@@ -13,7 +13,7 @@ clownFish::clownFish(int w) : Pisces(w){
   habitat = new char[2];
   habitat[0]='w';
   habitat[1]='0';
-  code='f';
+  code='o';
   name = "Ikan badut";
   sound= "Blub blub";
   tame = true;

@@ -15,7 +15,6 @@ public:
      *Mengdealokasi parameter dari kelas facility */
     ~Facility();
     
-    virtual void Interact();
 protected:
     char facility_type;
 };

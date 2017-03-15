@@ -11,7 +11,7 @@
 Dragonfly::Dragonfly(int w) : Insect(w){
   diet = new Herbivore(10);
   habitat = new char[2];
-  habitat[0]='a';
+  habitat[0]='f';
   habitat[1]='0';
   code='d';
   name = "Capung";

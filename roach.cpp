@@ -9,7 +9,7 @@ Roach :: Roach(int w) : Insect(w)
   diet = new Omnivore(20);
   habitat = new char[2];
   habitat[0] = 'l';
-  habitat[1] = 'a';
+  habitat[1] = 'f';
   code='r';
   name = "Kecoak";
   sound = "...";

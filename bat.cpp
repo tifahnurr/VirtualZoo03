@@ -4,7 +4,7 @@
 Bat::Bat(int w) : Mammal(w){
   diet = new Omnivore(30);
   habitat = new char[2];
-  habitat[0]='a';
+  habitat[0]='f';
   habitat[1]='0';
   code='b';
   name = "Kelelawar";

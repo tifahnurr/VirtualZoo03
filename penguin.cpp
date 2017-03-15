@@ -8,9 +8,9 @@ Penguin :: Penguin(int w) : Aves(w)
 {
   diet = new Carnivore(30);
   habitat = new char[2];
-  habitat[0] = 'a';
+  habitat[0] = 'w';
   habitat[1] = 'l';
-  code='P';
+  code='g';
   name = "Penguin";
   sound = "...";
   tame = true;

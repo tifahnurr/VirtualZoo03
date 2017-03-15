@@ -14,10 +14,6 @@ class Pisces : public Animal{
      * Berinteraksi dengan hewan pisces*/
     virtual void Interact()=0;
     
-    /**@brief Feed.
-     * Memberi makan hewan pisces*/
-    virtual void Feed()=0;
-    
     /**@brief Description.
      * Menjelaskan secara umum tentang hewan tersebut*/
     void Description();

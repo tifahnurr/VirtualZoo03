@@ -49,17 +49,3 @@ char Habitat::Render(){
     return code;
   }
 }
-
-
-void Habitat::Interact(){
-  if (code=='w'||code=='W'){
-    cout<<"Habitat air"<<endl;
-  } else if (code=='f'||code=='F'){
-    cout<<"Habitat udara"<<endl;
-  } else if (code=='L'||code=='l'){
-    cout<<"Habitat darat"<<endl;
-  }
-  if (GetCage()!=nil_cage){
-    GetCage()->Interact();
-  }
-}

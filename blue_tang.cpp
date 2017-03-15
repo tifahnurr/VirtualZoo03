@@ -1,4 +1,4 @@
-#include "blueTang.h"
+#include "blue_tang.h"
   /*protected:
     DietType* diet;
     char* habitat;

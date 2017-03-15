@@ -32,9 +32,7 @@ public:
     /** @brief setAnimal
       * Meletakkan hewan di cage tertentu*/
     void SetAnimal(Animal *x);
-    
-    void Interact();
-    
+  
     void ClearAnimal();
   
     

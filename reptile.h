@@ -20,10 +20,6 @@ class Reptile : public Animal{
      * Berinteraksi dengan hewan reptile*/
     virtual void Interact()=0;
     
-    /**@brief Feed.
-     * Memberi makan hewan reptile*/
-    virtual void feed()=0;
-    
     /**@brief Description.
      * Menjelaskan secara umum tentang hewan tersebut*/
     void Description();

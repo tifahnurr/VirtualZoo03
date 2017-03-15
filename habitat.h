@@ -42,8 +42,6 @@ public:
     
     char Render();
     
-    void Interact();
-    
 protected :
     Cage *nil_cage = NULL ;
     Cage *cage;
