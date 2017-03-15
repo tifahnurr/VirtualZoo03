@@ -39,23 +39,49 @@ class Zoo{
      * mengecek apakah bisa memindahkan hewan
      */
     bool CanMoveAnimal(int fromx, int fromy, int tox, int toy);
-    /**@brief mengembalikan cell ke i,j
+
+    /**@brief GetCell
+     * mengembalikan cell ke i,j
      */
     Cell* GetCell(int i, int j);
     
+    /**@brief GetPanjang
+     * mengembalikan panjang dari peta
+     */
     int GetPanjang();
     
+    /**@brief GetLebar
+     * mengembalikan lebar dari peta
+     */
     int GetLebar();
     
+    /**@brief GetNAnimal
+     * Mengembalikan banyan animal yang sudah dibangun
+     */ 
     int GetNAnimal();
     
+    /**@brief SetAnimals
+     * mengeset animal secara otomatis
+     */
     void SetAnimals();
+    
+    /**@brief GetEntP
+     * Mengembalikan koordinat memanjang dari titik masuk
+     */
+    int GetEntP();
+    
+    /**@brief GetEntL
+     * mengembalikan koordinat melebar dari titik masuk
+     */
+    int GetEntL();
   private:
     Cell ***map;
     Animal **animal;
     const int p;
     const int l;
     static int n_animal;
+    int ent_p;
+    int ent_l;
 };
 
 #endif
