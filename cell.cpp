@@ -34,6 +34,6 @@ bool Cell::IsVisited() {return visited;}
 
 void Cell::SetBool(bool x) {visited = x;}
 
-void Cell::SetAbsis(int a) {x = a;}
+void Cell::SetX(int a) {x = a;}
 
-void Cell::SetOrdinat(int b) {y = b;}
+void Cell::SetY(int b) {y = b;}
