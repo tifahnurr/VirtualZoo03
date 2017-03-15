@@ -8,7 +8,7 @@ class Restaurant: public Facility{
   
   Restaurant();
   
-  void DisplayFood();
+  void Interact();
   
   private:
   

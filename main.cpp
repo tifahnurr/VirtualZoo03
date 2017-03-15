@@ -2,10 +2,11 @@
 #include <time.h>
 #include <string>
 #include <fstream>
-#include <curses> // install dulu librarynya
+//#include <curses>
 #include "stdlib.h"
 #include "zoo.h"
 #include "lion.h"
+#include "driver.h"
 
 using namespace std;
 
@@ -80,7 +81,7 @@ int Zoo::n_animal=0;
 int main(){
   
   int i, j;
-  static const int panjang = 25;
+  static const int panjang = 26;
   static const int lebar = 50;
   Zoo Peta(panjang,lebar);
   LoadMap(Peta);
@@ -90,14 +91,9 @@ int main(){
   
   Peta.SetAnimals();
   
-  for (int i = 0; i < panjang; i++){
-    for (int j = 0; j < lebar; j++){
-      cout << Peta.GetCell(i, j)->Render();
-    }
-    cout << endl;
-  }
+  Driver::Tour(Peta);
   
-  initscr();
+  /*initscr();
   getmaxyx(stdscr,y,x);
   start_color();
   
@@ -109,7 +105,7 @@ int main(){
   init_pair(6, COLOR_WHITE, COLOR_CYAN);
   init_pair(7, COLOR_WHITE, COLOR_WHITE);*/
   
-  for (int i = 1; i <= panjang+1; i++){
+  /*for (int i = 1; i <= panjang+1; i++){
     for (int j = 1; j <= lebar; j++){
       switch (Peta.GetCell(i-1,j-1)->Render()) {
         case ('-') :
@@ -158,10 +154,10 @@ int main(){
           refresh(); attroff(COLOR_PAIR(3)); break;
       }
     }
-  }
+  }*/
   cout << endl;
-  getch();
-  endwin();
+  //getch();
+  //endwin();
   
   return 0;
 }

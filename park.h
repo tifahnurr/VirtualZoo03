@@ -8,7 +8,7 @@
 class Park: public Facility{
   public:
   Park();
-  void ViewPark();
+  void Interact();
   private:
 
 };

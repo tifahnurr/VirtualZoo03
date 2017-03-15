@@ -15,7 +15,8 @@ Restaurant:: Restaurant()
   code = 'R';
 }
 
-void Restaurant::DisplayFood()
+void Restaurant::Interact()
 {
   cout << "Kami menjual nasi goreng, ayam goreng, dsbnya" << endl;
+  cout << "Apa yang ingin anda beli?"<<endl;
 }
