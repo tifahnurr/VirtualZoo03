@@ -4,13 +4,13 @@
   * Kelas Restaurant untuk membuat restaurant
   */
 class Restaurant: public Facility{
-	public:
+  public:
   
   Restaurant();
   
   void DisplayFood();
-	
-	private:
+  
+  private:
   
   char x[20];
 };

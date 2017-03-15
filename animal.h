@@ -69,6 +69,14 @@ class Animal : public Renderable{
      * Menghitung gram makanan untuk hewan*/
     int CalculateFood();
     
+    int GetX();
+    
+    int GetY();
+    
+    void SetX(int _x);
+    
+    void SetY(int _y);
+    
   protected:
     DietType* diet;
     char* habitat;
@@ -78,6 +86,8 @@ class Animal : public Renderable{
     bool tame;
     bool is_animal;
     const int weight;
+    int x;
+    int y;
 
 };
 

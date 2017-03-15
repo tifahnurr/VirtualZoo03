@@ -25,6 +25,7 @@ Pigeon :: ~Pigeon()
     
 void Pigeon :: Interact()
 {
+  Description();
   cout << "Burung dara cukup sulit untuk di pegang, ia akan terbang ketika kita mendekat." << endl;
   cout << "Namun burung dara akan mendekat ketika ada makanan di dekatnya." << endl;
   Talk();

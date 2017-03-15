@@ -23,6 +23,7 @@ Tiger :: ~Tiger()
     
 void Tiger :: Interact()
 {
+  Description();
   cout << "Harimau sedang bermain dengan teman se spesiesnya." << endl;
   cout << "Mereka bermain kejar kejaran hingga terguling guling." << endl;
   Talk();

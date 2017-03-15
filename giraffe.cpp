@@ -26,6 +26,7 @@ Giraffe::~Giraffe(){
 }
 
 void Giraffe::Interact(){
+  Description();
   std::cout<<"Jerapah menengok dengan lehernya yang panjang"<<std::endl;
   std::cout<<"Telinganya bergerak-gerak"<<std::endl;
   Talk();

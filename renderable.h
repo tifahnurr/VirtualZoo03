@@ -2,7 +2,7 @@
 #define RENDER_H
 
 class Renderable{
-	virtual char Render()=0;
+  virtual char Render()=0;
 };
 
 

@@ -22,6 +22,7 @@ Mantis :: ~Mantis(){
 }
     
 void Mantis :: Interact(){
+  Description();
   cout << "Belalang hampir selalu tidak terlihat di habitat aslinya." << endl;
   cout << "Mereka berkamuflase dengan bersembunyi menyerupai daun." << endl;
   Talk();

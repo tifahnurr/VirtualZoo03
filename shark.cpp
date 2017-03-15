@@ -25,6 +25,7 @@ Shark :: ~Shark()
     
 void Shark :: Interact()
 {
+  Description();
   cout << "Hiu bergerak menyusuri aquarium yang ada." << endl;
   Talk();
 }

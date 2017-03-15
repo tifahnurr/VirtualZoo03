@@ -26,6 +26,7 @@ Eagle::~Eagle(){
 }
 
 void Eagle::Interact(){
+  Description();
   std::cout<<"Elang menatap dengan matanya yang tajam"<<std::endl;
   std::cout<<"Dia mengepakkan sayapnya"<<std::endl;
   Talk();

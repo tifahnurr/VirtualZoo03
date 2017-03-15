@@ -17,21 +17,11 @@
 
 class Air : public Habitat
 {
-	public:
-	/**@brief Constructor
-	 * Mengalokasi parameter-parameter Air
-	 * @param make_cage Status bahwa dalam habitat Air adalah cage atau bukan*/
+  public:
+  /**@brief Constructor
+   * Mengalokasi parameter-parameter Air
+   * @param make_cage Status bahwa dalam habitat Air adalah cage atau bukan*/
     Air(bool make_cage);
-   
-	/**@brief PurifyAir
-	 * Membersihkan udara dalam kandang*/
-    void PurifyAir();
-    
-    /**@brief CleanNet
-     * Membersihkan jaring*/
-    void CleanNet();
-    
-    
 };
 
 #endif /* air_h */

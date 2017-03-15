@@ -19,6 +19,7 @@ Bat::~Bat(){
 }
 
 void Bat::Interact(){
+  Description();
   std::cout<<"Kelelawar mengepakkan sayapnya sekali"<<std::endl;
   std::cout<<"Tampaknya sedang tidur"<<std::endl;
   Talk();

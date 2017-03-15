@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include "cage.h"
+#include "lion.h"
 
 Cage::Cage()
 {
@@ -17,10 +18,9 @@ Animal* Cage::GetAnimal()
   return penghuni;
 }
 
-void Cage::SetAnimal(Animal &x)
+void Cage::SetAnimal(Animal* x)
 {
-  penghuni = &x;
-  
+  penghuni = x;
 }
 
 void Cage::ClearAnimal()

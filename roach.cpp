@@ -25,6 +25,7 @@ Roach :: ~Roach()
     
 void Roach :: Interact()
 {
+  Description();
   cout << "Kecoak menyusuri kandang yang ada dengan menggunakan kaki kaki kecilnya. " << endl;
   cout << "Kecoak terkadang menggerakkan antenanya, dan bahkan mengepakkan sayapnya untuk melayang di udara." << endl;
   Talk();

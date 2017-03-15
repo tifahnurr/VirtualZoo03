@@ -35,11 +35,12 @@ public:
     /**@brief IsCageAvailable.
       * Memeriksa apakah habitat tersebut merupakan cage atau bukan*/
     bool IsCageAvailable();
-   
-    
+      
     /** @brief GetCage
       * Melihat keadaan cage dalam suatu habitat*/ 
     Cage* GetCage();
+    
+    char Render();
     
 protected :
     Cage *nil_cage = NULL ;

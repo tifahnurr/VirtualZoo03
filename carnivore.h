@@ -24,7 +24,7 @@ class Carnivore : public DietType{
    
     /**@brief Constructor.
      * Constructor dengan parameter*/
-		/**@param p porsi yang dibutuhkan oleh suatu animal*/
+    /**@param p porsi yang dibutuhkan oleh suatu animal*/
     Carnivore(int p);
     
     /**@brief Feed.

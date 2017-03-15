@@ -26,6 +26,7 @@ Cendrawasih::~Cendrawasih(){
 }
 
 void Cendrawasih::Interact(){
+  Description();
   std::cout<<"Cendrawasih mengepakkan sayapnya"<<std::endl;
   std::cout<<"Burung surga terbang lagi"<<std::endl;
   Talk();

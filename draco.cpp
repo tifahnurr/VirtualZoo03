@@ -26,6 +26,7 @@ Draco::~Draco(){
 }
 
 void Draco::Interact(){
+  Description();
   std::cout<<"Bunglon terbang membuka selaput kulitnya"<<std::endl;
   std::cout<<"Dia berpindah dengan cara terbang"<<std::endl;
   Talk();

@@ -23,6 +23,7 @@ Swan :: ~Swan()
     
 void Swan :: Interact()
 {
+  Description();
   cout << "Angsa berenang renang dengan indahnya di danau" << endl;
   cout << "Mereka berkumpul bersama temannya, berenang kesana kemari." << endl;
   Talk();

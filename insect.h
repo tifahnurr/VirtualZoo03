@@ -9,23 +9,23 @@
   */
 
 class Insect : public Animal{
-	public:
+  public:
     /**@brief Constructor
      * alokasi untuk insect 
      * @param w Nilai berat badan dari hewan tipe insect*/
     Insect(int w);
     
-		/**@brief Interaksi.
-		 * Berinteraksi dengan hewan insect*/
-		virtual void Interact()=0;
-		
-		/**@brief Description.
-		 * Menjelaskan secara umum tentang hewan tersebut*/
-		void Description();
-		
-		/**@brief AnimalDescription.
-		 * Menjelaskan secara khusus tentang hewan*/
-		virtual void AnimalDescription()=0;
+    /**@brief Interaksi.
+     * Berinteraksi dengan hewan insect*/
+    virtual void Interact()=0;
+    
+    /**@brief Description.
+     * Menjelaskan secara umum tentang hewan tersebut*/
+    void Description();
+    
+    /**@brief AnimalDescription.
+     * Menjelaskan secara khusus tentang hewan*/
+    virtual void AnimalDescription()=0;
 };
 
 #endif

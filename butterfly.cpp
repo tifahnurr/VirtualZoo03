@@ -26,6 +26,7 @@ Butterfly::~Butterfly(){
 }
 
 void Butterfly::Interact(){
+  Description();
   std::cout<<"Kupu-kupu hinggap di suatu bunga"<<std::endl;
   std::cout<<"Kupu-kupu itu terbang lagi"<<std::endl;
   Talk();

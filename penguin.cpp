@@ -25,6 +25,7 @@ Penguin :: ~Penguin()
     
 void Penguin:: Interact()
 {
+  Description();
   cout << "Penguin bermain main dengan 'arena' yang telah dibuat di kandangnya" << endl;
   cout << "Mereka berseluncur di 'arena' mereka dengan menggunakan perut mereka" << endl;
   Talk();

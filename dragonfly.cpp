@@ -26,6 +26,7 @@ Dragonfly::~Dragonfly(){
 }
 
 void Dragonfly::Interact(){
+  Description();
   std::cout<<"Capung hinggap di rumput"<<std::endl;
   std::cout<<"Begitu didekati capung langsung terbang"<<std::endl;
   Talk();

@@ -13,7 +13,7 @@ Lion::Lion(int w) : Mammal(w){
   habitat = new char[2];
   habitat[0]='l';
   habitat[1]='0';
-  code='L';
+  code='i';
   name = "Singa";
   sound= "Roar";
   tame = false;
@@ -26,6 +26,7 @@ Lion::~Lion(){
 }
 
 void Lion::Interact(){
+  Description();
   std::cout<<"Singa mengendap-ngendap di balik semak"<<std::endl;
   std::cout<<"Tampaknya dia ingin menyergap sesuatu"<<std::endl;
   Talk();

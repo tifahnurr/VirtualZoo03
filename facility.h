@@ -8,15 +8,15 @@
 
 class Facility : public Cell{
 public:
-		/**@brief Constructor.
+    /**@brief Constructor.
      *Mengkonstruksi kelas Facility */
-		Facility();
-		/**@brief Destructor.
+    Facility();
+    /**@brief Destructor.
      *Mengdealokasi parameter dari kelas facility */
-		~Facility();
-		
+    ~Facility();
+    
 protected:
-		char facility_type;
+    char facility_type;
 };
 
 #endif

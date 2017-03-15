@@ -1,10 +1,11 @@
 #include <iostream>
 #include <time.h>
-#include <string.h>
+#include <string>
 #include <fstream>
-#include <curses.h>
+//#include <curses>
 #include "stdlib.h"
 #include "zoo.h"
+#include "lion.h"
 
 using namespace std;
 
@@ -74,6 +75,8 @@ void LoadingScreen(){
 
 void LoadMap(Zoo& zoo);
 
+int Zoo::n_animal=0;
+
 int main(){
   
   int i, j;
@@ -85,6 +88,8 @@ int main(){
   
   int x,y;
   
+  Peta.SetAnimals();
+  
   for (int i = 0; i < panjang; i++){
     for (int j = 0; j < lebar; j++){
       cout << Peta.GetCell(i, j)->Render();
@@ -92,7 +97,7 @@ int main(){
     cout << endl;
   }
   
-  initscr();
+  /*initscr();
   getmaxyx(stdscr,y,x);
   start_color();
   
@@ -102,9 +107,9 @@ int main(){
   init_pair(4, COLOR_WHITE, COLOR_BLUE);
   init_pair(5, COLOR_WHITE, COLOR_MAGENTA);
   init_pair(6, COLOR_WHITE, COLOR_CYAN);
-  init_pair(7, COLOR_WHITE, COLOR_WHITE);
+  init_pair(7, COLOR_WHITE, COLOR_WHITE);*/
   
-  for (int i = 1; i <= panjang+1; i++){
+  /*for (int i = 1; i <= panjang+1; i++){
     for (int j = 1; j <= lebar; j++){
       switch (Peta.GetCell(i-1,j-1)->Render()) {
         case ('-') :
@@ -153,10 +158,10 @@ int main(){
           refresh(); attroff(COLOR_PAIR(3)); break;
       }
     }
-  }
+  }*/
   cout << endl;
-  getch();
-  endwin();
+  //getch();
+  //endwin();
   
   return 0;
 }
@@ -170,7 +175,6 @@ void LoadMap(Zoo& zoo){
   if(file.is_open()){
     for(int i = 0; i < zoo.GetPanjang(); i++){
       string row;
-      getline (file, row);
       if (file >> row){
         for (int j = 0; j != min<int>(zoo.GetLebar(),row.length()); ++j){
           zoo.SetCell(row[j],i,j);

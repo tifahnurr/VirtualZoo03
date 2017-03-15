@@ -46,3 +46,19 @@ char Animal::Render(){
 int Animal::CalculateFood(){
   return (weight*diet->GetPortion());
 }
+
+int Animal::GetX(){
+  return x;
+}
+
+int Animal::GetY(){
+  return y;
+}
+
+void Animal::SetX(int _x){
+  x=_x;
+}
+
+void Animal::SetY(int _y){
+  y=_y;
+}

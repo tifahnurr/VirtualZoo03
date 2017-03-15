@@ -42,15 +42,20 @@ class Zoo{
     /**@brief mengembalikan cell ke i,j
      */
     Cell* GetCell(int i, int j);
-  
-  int GetPanjang();
-  
-  int GetLebar();
+    
+    int GetPanjang();
+    
+    int GetLebar();
+    
+    int GetNAnimal();
+    
+    void SetAnimals();
   private:
     Cell ***map;
     Animal **animal;
     const int p;
     const int l;
+    static int n_animal;
 };
 
 #endif

@@ -26,6 +26,7 @@ Crocodile::~Crocodile(){
 }
 
 void Crocodile::Interact(){
+  Description();
   std::cout<<"Buaya membuka mulutnya menunggu mangsa"<<std::endl;
   std::cout<<"Buaya itu bergerak di dalam kandangnya"<<std::endl;
   Talk();

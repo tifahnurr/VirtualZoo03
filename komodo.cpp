@@ -26,6 +26,7 @@ Komodo::~Komodo(){
 }
 
 void Komodo::Interact(){
+  Description();
   std::cout<<"Komodo menjulur-julurkan lidahnya"<<std::endl;
   std::cout<<"Berjalan-jalan dalam kandang"<<std::endl;
   Talk();

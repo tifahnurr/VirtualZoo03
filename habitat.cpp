@@ -9,6 +9,8 @@
 #include <iostream>
 #include "habitat.h"
 
+using namespace std;
+
 Habitat::Habitat (bool make_cage)
 {
     if (make_cage)
@@ -24,7 +26,7 @@ Habitat::Habitat (bool make_cage)
 }
 
 Habitat::~Habitat(){
-	delete cage;
+  delete cage;
 }
 
 bool Habitat::IsCageAvailable()
@@ -33,9 +35,17 @@ bool Habitat::IsCageAvailable()
 }
 
 Cage* Habitat::GetCage(){
-	return cage;
+  return cage;
 }
 
 char Habitat::GetHabitat(){
-	return code;
+  return code;
+}
+
+char Habitat::Render(){
+  if (cage!=nil_cage && cage->GetAnimal()!=NULL){
+    return cage->GetAnimal()->Render();
+  } else {
+    return code;
+  }
 }

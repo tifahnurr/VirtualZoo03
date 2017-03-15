@@ -23,6 +23,7 @@ Zebra :: ~Zebra()
     
 void Zebra :: Interact()
 {
+  Description();
   cout << "Zebra berlari di padang rumput" << endl;
   Talk();
 }

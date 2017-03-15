@@ -5,12 +5,12 @@
 #include "habitat.h"
 
 int main(){
-	Cell* cell;
-	Animal* p;
-	Habitat* hab;
-	hab = new Land(true);
-	cell = hab;
-	p = new Lion(50);
-	cell->GetCage()->SetAnimal(p);
-	cell->GetCage()->GetAnimal()->Feed();
+  Cell* cell;
+  Animal* p;
+  Habitat* hab;
+  hab = new Land(true);
+  cell = hab;
+  p = new Lion(50);
+  cell->GetCage()->SetAnimal(p);
+  cell->GetCage()->GetAnimal()->Feed();
 }

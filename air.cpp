@@ -18,12 +18,3 @@ Air::Air(bool make_cage) : Habitat(make_cage)
     code = 'f';
   }
 }
-
-void Air::PurifyAir()
-{
-  cout << "Purifying air" << endl;
-}
-void Air::CleanNet()
-{
-  cout << "Cleaning the net" << endl;
-}

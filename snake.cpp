@@ -23,6 +23,7 @@ Snake :: ~Snake()
     
 void Snake :: Interact()
 {
+  Description();
   cout << "Ular melingkar di pohon sambil beristirahat." << endl;
   cout << "Terkadang, ia berdesis sambil menjulurkan lidahnya" << endl;
   Talk();

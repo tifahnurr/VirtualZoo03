@@ -6,10 +6,10 @@
   * Kelas Park untuk membuat taman
   */
 class Park: public Facility{
-	public:
+  public:
   Park();
   void ViewPark();
-	private:
+  private:
 
 };
 

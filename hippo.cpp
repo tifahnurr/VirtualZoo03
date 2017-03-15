@@ -26,6 +26,7 @@ Hippo::~Hippo(){
 }
 
 void Hippo::Interact(){
+  Description();
   std::cout<<"Kuda nil membuka mulutnya"<<std::endl;
   std::cout<<"Giginya tampak"<<std::endl;
   Talk();
