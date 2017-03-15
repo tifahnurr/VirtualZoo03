@@ -82,11 +82,11 @@ public:
   
   /**@brief SetAbsis
    * mengubah koordinat absis cell */
-  void SetAbsis(int a);
+  void SetX(int a);
   
   /**@brief SetOrdinat
    * mengubah koordinat ordinat cell */
-  void SetOrdinat(int b);
+  void SetY(int b);
 		
 protected:
 		char code;
