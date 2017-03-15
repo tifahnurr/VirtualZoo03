@@ -2,7 +2,7 @@
 #include <time.h>
 #include <string>
 #include <fstream>
-//#include <curses>
+#include <curses> // install dulu librarynya
 #include "stdlib.h"
 #include "zoo.h"
 #include "lion.h"
@@ -97,7 +97,7 @@ int main(){
     cout << endl;
   }
   
-  /*initscr();
+  initscr();
   getmaxyx(stdscr,y,x);
   start_color();
   
@@ -109,7 +109,7 @@ int main(){
   init_pair(6, COLOR_WHITE, COLOR_CYAN);
   init_pair(7, COLOR_WHITE, COLOR_WHITE);*/
   
-  /*for (int i = 1; i <= panjang+1; i++){
+  for (int i = 1; i <= panjang+1; i++){
     for (int j = 1; j <= lebar; j++){
       switch (Peta.GetCell(i-1,j-1)->Render()) {
         case ('-') :
@@ -158,10 +158,10 @@ int main(){
           refresh(); attroff(COLOR_PAIR(3)); break;
       }
     }
-  }*/
+  }
   cout << endl;
-  //getch();
-  //endwin();
+  getch();
+  endwin();
   
   return 0;
 }
